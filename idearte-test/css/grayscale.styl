@@ -1058,7 +1058,11 @@ h1.col-lg-8.centrado.text-center{
     
    /**INDEX**/ 
     
-@media (min-width:1025px) {
+@media(min-width:1025px) {
+    
+    section.cd-intro.ancho{
+        width 100%
+    }
     
     nav.navbar.navbar-custom.navbar-fixed-top.top-nav-collapse{
         padding 0
@@ -1109,7 +1113,7 @@ h1.col-lg-8.centrado.text-center{
     .mensaje-section {
     width: 100%
     height: 250px
-    padding: 90px 0
+    padding: 60px 0 90px 0
     font-size: 10rem
     background: white
     background-position: center
@@ -1176,7 +1180,7 @@ h1.col-lg-8.centrado.text-center{
     -webkit-transition: all .2s ease-in-out
     -moz-transition: all .2s ease-in-out
     transition: all .2s ease-in-out
-    font-size 18px
+    font-size 1.9rem
     }
     
     li.display-none{
@@ -1189,6 +1193,13 @@ h1.col-lg-8.centrado.text-center{
     background: white
     }
 
+    .servicios-section .titulo-h2{
+        font-size 3rem
+        color #1f1f1f
+        margin-bottom 1.3em
+        text-align center
+    }/* DESKTOP Y TABLE = style="font-size:4rem; color:gray; margin-bottom:1.2em;"*/
+    
     .servicios-section a{
     color: rgb(21, 21, 21)
     }
@@ -1267,12 +1278,13 @@ h1.col-lg-8.centrado.text-center{
         margin-top 1.9rem
         margin-bottom 1.5rem
         width auto 
-    }
-
-    .logo-footer {
         font-family:'amaranthregular' 
         font-size 33px 
         display block
+    }
+    
+    .logo-footer:hover{
+        color #454242
     }
 
     .logo-footer-p{
@@ -1449,11 +1461,6 @@ h1.col-lg-8.centrado.text-center{
 
 .portada-about{
         background: url(http://idearte.camxim.com/img/acerca/portada-acerca.jpg) no-repeat center center scroll
-        background-attachment: fixed
-}
-
-.portada-index{
-        background: url(http://idearte.camxim.com/img/portada-index.jpg) no-repeat center center scroll
         background-attachment: fixed
 }
 
@@ -2079,6 +2086,14 @@ color: #FFFCFC
 
 @media(max-width:1024px) and (min-width:601px) {
     
+    button{
+        display none
+    }
+
+    .is-active{
+        display block
+    }
+
     /************NAV************/
     nav a{
         color white
@@ -2158,12 +2173,12 @@ color: #FFFCFC
     }
     
     section.cd-intro.ancho{
-        width 70%
+        width 100%
     }
     
     p.cd-headline.slide.frase-principal.parrafo{
         font-size 4.2rem !important
-        line-height 7.5rem !important
+        line-height 11.5rem !important
     }
 
 
@@ -2180,7 +2195,7 @@ color: #FFFCFC
     .mensaje-section {
     width: 100%
     height: 250px
-    padding: 90px 0
+    padding: 50px 0
     font-size: 10rem
     background: white
     background-position: center
@@ -2259,6 +2274,13 @@ color: #FFFCFC
     .servicios-section {
     padding: 43px 0
     background: white
+    }
+    
+    .servicios-section .titulo-h2{
+        font-size 3rem
+        color #1f1f1f
+        margin-bottom 1.2em
+        text-align center
     }
 
     .servicios-section a{
@@ -2357,16 +2379,18 @@ color: #FFFCFC
 
     /**********FOOTER**********/
     .logo-footer{
-        margin-top 1.9rem
+        display block
+        font-family 'amaranthregular' 
+        font-size 33px 
         margin-bottom 1.5rem
+        margin-top 1.9rem
         width auto 
     }
 
-    .logo-footer {
-        font-family:'amaranthregular' 
-        font-size 33px 
-        display block
+    .logo-footer:hover{
+        color #454242
     }
+
 
     .logo-footer-p{
         font-size 2.2rem
@@ -2380,7 +2404,7 @@ color: #FFFCFC
     footer {
         color #454242
         background #fff200
-        padding-bottom 22px
+        padding 25px 0
     }
 
     .subfooter {
@@ -2426,6 +2450,27 @@ color: #FFFCFC
 
 @media(max-width:600px) {/*IPHONE 6 PLUS*/
     
+    button{
+        display none
+    }
+
+    .is-active{
+        display block
+    }
+    
+    ul.nav.navbar-nav{
+        margin 0 -15px
+        height 327px
+    }
+
+    li.display-none{
+        padding 20px 0
+    }
+    
+    li.display-none.alto-li{
+        padding 6px 0
+    }
+
 
     /************NAV************/
     nav a{
@@ -2617,7 +2662,6 @@ color: #FFFCFC
         padding: 0
         text-align: left
         color: #fff
-        // background-size: cover
     }
 
     .intro-servicios .servicios-body {
@@ -2654,15 +2698,15 @@ color: #FFFCFC
 
     /********SERVICIOS*********/
     .servicios-section {
-    padding 43px 0
+    padding-top 43px
     background white
     }
 
     .servicios-section .titulo-h2{
         font-size 3rem
-        color gray
+        color #1f1f1f
         margin-bottom 1.2em
-        text-align center;
+        text-align center
     }/* DESKTOP Y TABLE = style="font-size:4rem; color:gray; margin-bottom:1.2em;"*/
 
     section h2 span{
@@ -2719,7 +2763,7 @@ color: #FFFCFC
     }
 
     .section-otros h4{
-        height: auto
+        height: auto !important
         margin: 20px 0 26px 0
         font-size: 20px
     
@@ -2764,42 +2808,42 @@ color: #FFFCFC
 
     /*********FOOTER*********/
     .logo-footer{
-        margin-top: 1.9rem
-        margin-bottom: 1.5rem
-        width: auto 
+        display block
+        font-family 'amaranthregular' 
+        font-size 33px 
+        margin-bottom 1.5rem
+        margin-top 1.9rem
+        width auto 
     }
 
-    .logo-footer{
-        font-family: 'amaranthregular' 
-        font-size: 33px 
-        display: block
+    .logo-footer:hover{
+        color #454242
     }
 
     .logo-footer-p{
-        font-size: 2.2rem
-        margin-top: 3.5rem
-        margin-bottom: 2.5rem
-        color: #454242
-        letter-spacing: 1px
-        /*margin-left:27px*/
+        font-size 2.2rem
+        margin-top 3.5rem
+        margin-bottom 2.5rem
+        color #454242
+        letter-spacing 1px
     }
 
     footer {
     color #454242
     background #fff200
-    padding-bottom 22px
+    padding 25px 0
     }
 
     .subfooter {
-        height: auto
-        padding: 0px
-        text-align: center
+        height auto
+        padding 0px
+        text-align center
     }
 
     .subfooter-bottom {
-        background: #fff200
-        height: auto
-        padding: 5px 0
+        background #fff200
+        height auto
+        padding 5px 0
         }
         
     footer a{
@@ -2824,7 +2868,7 @@ color: #FFFCFC
         color white
     }
 
-}
+} /*FIN INDEX IPHONE 6 PLUS*/
 
 
 /* Estilos del formulario */

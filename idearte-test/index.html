@@ -43,6 +43,7 @@
         
     <script src="js/jquery-2.1.1.js"></script>
     <script src="js/main.js"></script> <!-- Resource jQuery -->
+    <script src="js/hammer.min.js"></script>
 
     <!-- <link rel="stylesheet" href="css/reset.css">  --><!-- CSS reset -->
     <link rel="stylesheet" href="http://idearte.camxim.com/css/textslide.css"> <!-- Resource style -->
@@ -64,9 +65,7 @@
      ga('create', 'UA-59957353-1', 'auto');
      ga('send', 'pageview');
 
-    </script> 
-
-    
+    </script>
 
 </head>
 
@@ -81,7 +80,10 @@
                     <span class="light" style="font-family:amaranthregular; font-size: 43px;">idearte.</span>
                 </a>
             
-            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse" style="margin-top: 0;">
+            <button id="verMenu" class="navbar-toggle is-active" data-toggle="collapse" data-target=".navbar-main-collapse" style="margin-top: 0;">M
+                <span class="glyphicon glyphicon-align-justify" style="color: white; font-size: 30px; padding: 0px 13px 13px 14px"></span>          
+            </button>
+            <button id="ocultarMenu" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse" style="margin-top: 0;">O
                 <span class="glyphicon glyphicon-align-justify" style="color: white; font-size: 30px; padding: 0px 13px 13px 14px"></span>          
             </button>
 
@@ -92,16 +94,16 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                    <li>
+                    <li class="display-none alto-li">
                         <a class="page-scroll" href="http://idearte.camxim.com/acerca/">Acerca</a>
                     </li>
-                    <li class="display-none">
+                    <li class="display-none alto-li">
                         <a class="page-scroll" href="http://idearte.camxim.com/servicios/diseño-web">Diseño Web</a>
                     </li>
-                    <li class="display-none">
+                    <li class="display-none alto-li">
                         <a class="page-scroll" href="http://idearte.camxim.com/servicios/marketing-digital">Marketing Digital</a>
                     </li>
-                    <li class="display-none">
+                    <li class="display-none alto-li">
                         <a class="page-scroll" href="http://idearte.camxim.com/servicios/imagen-corporativa">Imagen Corporativa</a>
                     </li>
                     <li role="presentation" class="dropdown displaynone">
@@ -312,7 +314,7 @@
                     </a>
                     
                     <h4 style="height:44px; margin:20px 0 15px 0; font-size:20px; color:rgb(21, 21, 21);">Inmobiliaria CAMXIM</h4>
-                    <p style="line-height:1.4;" style="text-centrado">Como socios estratégicos de CAMXIM nos propusimos crear una 
+                    <p style="line-height:1.4; top: 33%">Como socios estratégicos de CAMXIM nos propusimos crear una 
                         marca profesional, con visión de futuro y diseño a la vanguardia.
                         Los resultados fueron sorprendentes.</p>
                 </div>
@@ -389,22 +391,31 @@
     </footer>
 
     <script type="text/javascript">
-        var $buttonShowMenu = document.getElementById('showMenu');
-        var $buttonHideMenu = document.getElementById('hideMenu');
+        var $buttonVerMenu = document.getElementById('verMenu');
+        var $buttonOcultarMenu = document.getElementById('ocultarMenu');
         var $menu = document.getElementById('nav');
 
-        var showMenu = function(){
-            $menu.classList.add('menu');
+        var $body = document.querySelector('body');
+
+        var body = new Hammer($body);
+
+        var verMenu = function(){
+            $buttonVerMenu.classList.remove('is-active');
+            $buttonOcultarMenu.classList.add('is-active');
+            $menu.classList.add('is-active');
         }
 
-        var hideMenu = function(){
-            $menu.classList.remove('menu');
+        var ocultarMenu = function(){
+            $buttonVerMenu.classList.add('is-active');
+            $buttonOcultarMenu.classList.remove('is-active');
+            $menu.classList.remove('is-active');
         }
 
-        $buttonShowMenu.addEventListener("click", showMenu);
-        $buttonHideMenu.addEventListener("click", hideMenu);
+        $buttonVerMenu.addEventListener("click", verMenu);
+        $buttonOcultarMenu.addEventListener("click", ocultarMenu);
 
-
+        body.on('panright', verMenu)
+        body.on('panleft', ocultarMenu)
 
     </script>
     
