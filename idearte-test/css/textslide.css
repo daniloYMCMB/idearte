@@ -111,7 +111,7 @@ xslide
 .cd-headline.slide .cd-words-wrapper {
   overflow: hidden;
   vertical-align: top;
-  color: rgb(255, 242, 0);
+  color: #fff200;
 }
 .cd-headline.slide b {
   opacity: 0;
