@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<script src="//use.typekit.net/sjh0fwb.js"></script>
-<script>try{Typekit.load();}catch(e){}</script>
+    <script src="//use.typekit.net/sjh0fwb.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
     <link rel="shortcut icon" href="http://idearte.camxim.com/img/idearte-03.png">
 
     <title>idearte.</title>
@@ -18,7 +19,9 @@
     <link href="http://idearte.camxim.com/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="http://idearte.camxim.com/css/grayscale.css" rel="stylesheet">
+    <link href="http://idearte.camxim.com/css/grayscale.css?v=2.0" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="http://idearte.camxim.com/css/normalize.css">
 
     <!-- Animate CSS -->
     <link href="http://idearte.camxim.com/css/animate.css" rel="stylesheet">
@@ -26,7 +29,6 @@
 
     <link href="http://idearte.camxim.com/css/1140.css" rel="stylesheet" type="text/css">
     <link href="http://idearte.camxim.com/css/custom.css" rel="stylesheet" type="text/css">
-
     <script src="http://idearte.camxim.com/deploy/parallax.min.js"></script>
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 
@@ -41,6 +43,7 @@
         
     <script src="js/jquery-2.1.1.js"></script>
     <script src="js/main.js"></script> <!-- Resource jQuery -->
+    <script src="js/hammer.min.js"></script>
 
     <!-- <link rel="stylesheet" href="css/reset.css">  --><!-- CSS reset -->
     <link rel="stylesheet" href="http://idearte.camxim.com/css/textslide.css"> <!-- Resource style -->
@@ -62,56 +65,64 @@
      ga('create', 'UA-59957353-1', 'auto');
      ga('send', 'pageview');
 
-    </script>    
+    </script>
 
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" >
+<body id="page-top" data-spy="scroll" data-target="navbar-fixed-top" >
 
-
+ 
     <!-- Navigation -->
 
         <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
-            <div class="navbar-header">
-                <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
-                </button> -->
                 <a class="navbar-brand page-scroll" href="http://idearte.camxim.com/">
-                    <!-- <i class="fa fa-play-circle"></i>   -->
-                    <span class="light" style="font-family:amaranthregular; font-size: 33px">idearte.</span>
-                    <!-- <span class="text-yellow">WEB</span> -->
-                    <!-- <img src="http://idearte.camxim.com/img/idearte-02.png" style="width:100px; margin-left:10px;"> -->
+                    <span class="light" style="font-family:amaranthregular; font-size: 43px;">idearte.</span>
                 </a>
-            </div>
+            
+            <button id="verMenu" class="navbar-toggle is-active" data-toggle="collapse" data-target=".navbar-main-collapse" style="margin-top: 0;">
+                <span class="glyphicon glyphicon-align-justify" style="color: white; font-size: 30px; padding: 0px 13px 13px 14px"></span>          
+            </button>
+            <button id="ocultarMenu" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse" style="margin-top: 0;">
+                <span class="glyphicon glyphicon-align-justify" style="color: white; font-size: 30px; padding: 0px 13px 13px 14px"></span>          
+            </button>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse" style="background: transparent;">
+                <ul class="nav navbar-nav" style="text-align: center;">
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                    <li>
-                        <a class="p0age-scroll" href="http://idearte.camxim.com/acerca/">Acerca</a>
+                    <li class="alto-li">
+                        <a class="page-scroll" href="http://idearte.camxim.com/acerca/">Acerca</a>
                     </li>
-                    <li role="presentation" class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
-                      Servicios
-                    </a>
-                    <ul class="dropdown-menu" role="menu">
-                        <div class="arrow-up-servicios"></div>
-                      <li>
+                    <li class="display-none alto-li">
                         <a class="page-scroll" href="http://idearte.camxim.com/servicios/diseño-web">Diseño Web</a>
                     </li>
-                    <li>
+                    <li class="display-none alto-li">
                         <a class="page-scroll" href="http://idearte.camxim.com/servicios/marketing-digital">Marketing Digital</a>
                     </li>
-                    <li>
+                    <li class="display-none alto-li">
                         <a class="page-scroll" href="http://idearte.camxim.com/servicios/imagen-corporativa">Imagen Corporativa</a>
                     </li>
-                    </ul>
-                  </li>
+                    <li role="presentation" class="dropdown displaynone">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                          Servicios
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <div class="arrow-up-servicios"></div>
+                            <li>
+                                <a class="page-scroll" href="http://idearte.camxim.com/servicios/diseño-web">Diseño Web</a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="http://idearte.camxim.com/servicios/marketing-digital">Marketing Digital</a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="http://idearte.camxim.com/servicios/imagen-corporativa">Imagen Corporativa</a>
+                            </li>
+                        </ul>
+                    </li>
                     <li>
                         <a class="page-scroll" href="http://idearte.camxim.com/equipo/">Equipo</a>
                     </li>
@@ -121,6 +132,36 @@
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
+
+
+            <!-- Menu de bigdropinc.com -->
+            <!-- <div class="Header">
+                <button class="btn-menu" id="showMenu">MENU</button>
+                <nav id="nav" role="navigation">
+                    <ul class="MainMenu">
+                        <li class="MainMenu-item">
+                            <a href="http://idearte.camxim.com/acerca/" class="MainMenu-link">Acerca</a>
+                        </li>
+                        <li class="MainMenu-item">
+                            <a href="http://idearte.camxim.com/servicios/diseño-web"  class="MainMenu-link">Diseño Web</a>
+                        </li>
+                        <li class="MainMenu-item">
+                            <a href="http://idearte.camxim.com/servicios/marketing-digital" class="MainMenu-link">Marketing Digital</a>
+                        </li>
+                        <li class="MainMenu-item">
+                            <a href="http://idearte.camxim.com/servicios/imagen-corporativa" class="MainMenu-link">Imagen Corporativa</a>
+                        </li>
+                        <li class="MainMenu-item">
+                            <a href="http://idearte.camxim.com/equipo/" class="MainMenu-link">Equipo</a>
+                        </li>
+                        <li class="MainMenu-item">
+                            <a href="http://idearte.camxim.com/contacto/" class="MainMenu-link">Contacto</a>
+                        </li>
+                    </ul>
+                    <button class="btn-close" id="hideMenu">X</button>
+                </nav>
+            </div> -->
+
         </div>
         <!-- /.container -->
     </nav>
@@ -131,7 +172,7 @@
             <div class="row cotizar">
                 <h2>Solicite una <strong>Cotización</strong></h2>   
                 <form method="post" class="contacto">
-                    <fieldset>
+                    <fieldset style="border:none;">
                         <div class="col-xs-6">
                         <input type="text" class="nombre" placeholder="Nombre" name="nombre" />
                         </div>
@@ -161,45 +202,44 @@
         <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
         <script type="text/javascript" src="http://idearte.camxim.com/js/funciones.js"></script>
     </div>
-    </div>
 
     <!-- The ribbon -->
 
-    <a class="forkit" data-text="Cotizar" data-text-detached="Arrastra hacia abajo >" href="#"><img style="position: absolute; top: 0; right: 0; border: 0;" alt="Cotizar"></a>
+    <a class="forkit" data-text="Cotizar" data-text-detached="Arrastra hacia abajo >" href="#"><img style="position: absolute; top: 0; right: 0; border: 0; width: auto;" alt="Cotizar"></a>
 
     <script src="http://idearte.camxim.com/js/forkit.js"></script>
 
-
     <!-- Intro Header -->
-    <header class="intro-servicios portada-index content-section">
-    <div class="servicios-body" style="padding:0; vertical-align:middle;">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-10 col-md-offset-1 animated flipInX text-center">
-                        <p class="intro-text">
-                            <section class="cd-intro">
-                                <p class="cd-headline slide frase-principal" style="line-height: 8.5rem;">
-                                    <span>Diseñamos soluciones digitales <br> con</span>
-                                    <span class="cd-words-wrapper" style="width:auto;">
-                                        <b class="is-visible"> Creatividad.</b>
-                                        <b> Estrategia.</b>
-                                        <b> Experiencia.</b>
-                                        <b> Innovaci&oacuten.</b>
-                                        <b> Comunicaci&oacuten.</b>
-                                    </span>
-                                </p>
-                            </section> <!-- cd-intro -->
-                        </p>
+    <header class="intro-servicios portada-equipo content-section">
+        <div class="servicios-body" style="padding:0; vertical-align:middle;">
+            <div class="container">
+                <div class="row">
+                    <div id="bg">
+                        <div class="container animated bounceInDown portada">
+                            <ul id="scene">
+                                <li class="layer" id="breath" data-depth="0.00">
+                                <div>
+                                    <div class="col-lg-9 centrado text-center">
+                                        <h1 class="frase-principal">Solo un <strong>gran equipo</strong> puede
+                                            <br>lograr <strong>grandes resultados.</strong></h1>
+                                    <div>
+                                <div>     
+                                </div>
+                         <a data-scroll="" href="#equipo" class="action-button shadow animate yellow" style="margin-left:32px;">
+                        Conócenos</a>
+                                    </div>
+                                </div></div></li>
+                            </ul>
+                        </div>  
                     </div>
+                </div>
             </div>
-        </div>
 
             <div class="arrow-portada">
-                <a data-scroll href="#mensaje" class="btn btn-circle-portada page-scroll">
+                <a data-scroll="" href="#equipo" class="btn btn-circle-portada page-scroll">
                     <i class="fa fa-angle-double-down floating"></i>
                 </a>
             </div>
-
 
             <div class="barraflecha">
                 <div class="barra-horizontal left"></div>
@@ -277,45 +317,36 @@
                 </div>
             </div>
         </div>
-
     </section>
 
-
-
     <!-- Footer -->
-        <footer>
+    <footer>
         <section class="container-fluid subfooter">
-            <section id="contact" class="container content-section">
-                <div class="row">
-                    <div class="col-lg-3 padding-rl">
-                        <a style="width: 250px;" class="navbar-brand page-scroll logo-footer" href="http://idearte.pe/">
-                            <!-- <i class="fa fa-play-circle"></i>  
-                            <span class="light">EMPRESA</span>
-                            <span class="text-yellow">WEB</span> -->
-                            <span class="light logo-footer-p" style="font-family:amaranthregular; font-size: 33px; margin-left:10px;">
-                                idearte.
-                            </span>
+            <section id="contact" class="container footer-section">
+                    <div class="col-lg-3">
+                        <a class="light page-scroll logo-footer" href="http://idearte.camxim.com/">
+                        idearte.
                         </a>
                         <p>Javier Prado E. 6712</p>
                         <p>Oficina 401</p>
                         <p>Lima, Perú</p>
                     </div>
-                    <div class="col-lg-3 padding-rl">
+                    <div class="col-lg-3">
                         <p class="logo-footer-p">Contacto</p>
                         <p>(811) 424-4329</p>
-                        <a href="mailto:contacto@idearte.pe">
-                            <u>contacto@idearte.pe</u>
+                        <a href="mailto:contacto@idearteinc.com">
+                            <u>contacto@idearteinc.com</u>
                         </a>
                     </div>
-                    <div class="col-lg-3 padding-rl">
+                    <div class="col-lg-3">
                         <p class="logo-footer-p">Oportunidades</p>
                         <p>En idearte siempre estamos en 
                             búsqueda de talento.</p>
-                        <a href="mailto:talento@idearte.pe">
-                            <u>talento@idearte.pe</u>
+                        <a href="mailto:talento@idearteinc.com">
+                            <u>talento@idearteinc.com</u>
                         </a>
                     </div>
-                    <div class="col-lg-3 padding-rl">
+                    <div class="col-lg-3">
                         <p class="logo-footer-p">Síguenos en</p>
                         <ul class="soc">
                         <li><a class="soc-facebook" href="#"></a></li>
@@ -326,20 +357,41 @@
                         <li><a class="soc-instagram" href="#"></a></li>
                         </ul>
                     </div>
-                </div>
-            </section>
-        </section>
-
-        <section class="container-fluid subfooter-bottom">
-            <section id="contact" class="container content-section">
-                <div class="row">
-                    <div class="col-lg-12 text-right">
+                    <div class="col-lg-12 text-center">
                         <p>Copyright 2015 © idearte Inc.</p>
                     </div>
-                </div>
             </section>
         </section>
     </footer>
+
+    <script type="text/javascript">
+        var $buttonVerMenu = document.getElementById('verMenu');
+        var $buttonOcultarMenu = document.getElementById('ocultarMenu');
+        var $menu = document.getElementById('nav');
+
+        var $body = document.querySelector('body');
+
+        var body = new Hammer($body);
+
+        var verMenu = function(){
+            $buttonVerMenu.classList.remove('is-active');
+            $buttonOcultarMenu.classList.add('is-active');
+            $menu.classList.add('is-active');
+        }
+
+        var ocultarMenu = function(){
+            $buttonVerMenu.classList.add('is-active');
+            $buttonOcultarMenu.classList.remove('is-active');
+            $menu.classList.remove('is-active');
+        }
+
+        $buttonVerMenu.addEventListener("click", verMenu);
+        $buttonOcultarMenu.addEventListener("click", ocultarMenu);
+
+        body.on('panright', verMenu)
+        body.on('panleft', ocultarMenu)
+
+    </script>
     
     <script src="js/smooth-scroll.js"></script> <!-- Desplazamiento suave -->
     <script>
@@ -381,27 +433,7 @@
     });            
     </script>
 
-    <!-- animacionessssssssssssssss ********
-    <script>
-    $(window).scroll(function() {
-        $('#ross').each(function(){
-        var imagePos = $(this).offset().top;
-
-        var topOfWindow = $(window).scrollTop();
-            if (imagePos < topOfWindow+400) {
-                $(this).addClass("slideUp");
-                }
-            });
-        });
-    </script>
-
-    <script>
-    $('#ross').click(function() {
-        $(this).addClass("slideUp");
-        });
-    </script> -->
-
-
 </body>
 
 </html>
+

@@ -53,7 +53,7 @@ body {
     max-width: 1920px
     width: 100%
     height: 100%
-    font-family: "europa","Helvetica Neue",Helvetica,Arial,sans-serif
+    font-family 'europa',"Helvetica Neue",Helvetica,Arial,sans-serif
     font-weight: 300
     color: rgb(21, 21, 21)
     text-rendering: optimizeLegibility
@@ -68,6 +68,7 @@ html {
     background: #FFFFFF
     text-rendering: optimizeLegibility !important
     -webkit-font-smoothing: antialiased !important
+    font-family 'europa',"Helvetica Neue",Helvetica,Arial,sans-serif
 }
 
 h1,
@@ -77,9 +78,9 @@ h4,
 h5,
 h6 {
     margin: 0 0 30px
-    font-family: 'europa',"Helvetica Neue",Helvetica,Arial,sans-serif
     font-weight: 100
     letter-spacing: 1px
+    font-family 'europa',"Helvetica Neue",Helvetica,Arial,sans-serif
 }
 
 h2{
@@ -104,6 +105,7 @@ a {
     -webkit-transition all .2s ease-in-out
     -moz-transition all .2s ease-in-out
     transition all .2s ease-in-out
+    font-family 'europa',"Helvetica Neue",Helvetica,Arial,sans-serif
 }
 
 a:hover,
@@ -816,7 +818,7 @@ p.contenido-destacado{
 }
 
 .acerca-proceso-imagen{
-    min-height: 500px
+    min-height: 430px
 }
 .acerca-proceso-imagen img{
     width: 400px
@@ -826,17 +828,6 @@ p.contenido-destacado{
     color: rgb(0,0,0)
     font-weight: 400
 }
-
-h1.frase-principal{
-    margin: 0 0 4rem
-    font-family: 'europa',"Helvetica Neue",Helvetica,Arial,sans-serif
-    font-size: 6rem
-    font-weight: 400
-    letter-spacing: 1px
-    line-height: 6.5rem
-    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5)
-}
-
 .subtitulo{
     margin-bottom: 0.3rem
 }
@@ -1046,7 +1037,7 @@ h1.col-lg-8.centrado.text-center{
     padding: 0
 }
 
-#ross img{
+    #ross img{
     -webkit-transition: all .5s ease-in-out
     transition: all .5s ease-in-out
     }
@@ -1055,6 +1046,61 @@ h1.col-lg-8.centrado.text-center{
         -webkit-transform: scale(1.1,1.1)
         transform: scale(1.1,1.1)
     }
+    
+.light {
+        font-weight: 400
+    }
+    
+ /*********EQUIPO RESPONSIVE*****/
+.equipo{
+    text-align: center
+    background: white
+    padding: 0 0
+}
+
+.equipo-perfil{
+    padding-top: 7rem
+    margin-bottom: 70px
+}
+
+.fotoperfil{
+    margin-bottom: 2rem
+    text-align: center
+    margin: 0 2.0rem
+    padding: 0 2.5em
+}
+
+.fotoperfil h4 {
+font-size: 2.4rem
+color: black
+padding: 4px 0
+margin-bottom: 0
+border-radius: 30px
+width: 100%
+margin: 0 auto
+font-weight: 100
+}
+
+.fotoperfil img {
+    width: 100%
+    border-radius: 50%
+    margin-bottom: 1rem
+    -webkit-transition: all 1s ease-out  /* Chrome y Safari */
+    -o-transition: all 1s ease-out  /* Opera */
+    -moz-transition: all 1s ease-out  /* Mozilla Firefox */
+    -ms-transition: all 1s ease-out   /* Internet Explorer */
+    transition: all 1s ease-out  /* W3C */
+}
+
+
+.fotoperfil img:hover {
+    -webkit-transform: translate3d(0,0,0)
+    transition:all 1s ease-out
+}
+
+/*******FIN EQUIPO*********/
+
+   
     
    /**INDEX**/ 
     
@@ -1088,6 +1134,23 @@ h1.col-lg-8.centrado.text-center{
         background-color rgba(255,255,255,.2)
         outline 0
     }
+    
+    /*TITULO GLOBAL - DESKTOP*/
+    h1.frase-principal{
+    margin: 0 0 4rem
+    font-family: 'europa',"Helvetica Neue",Helvetica,Arial,sans-serif
+    font-size: 6rem
+    font-weight: 400
+    letter-spacing: 1px
+    line-height: 6.5rem
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5)
+    }
+    
+    p.cd-headline.slide.frase-principal.parrafo{
+        font-size 6rem
+    }
+
+    /**********INDEX*************/
 
     /**********HEADER**********/
     .portada-index{
@@ -1150,18 +1213,7 @@ h1.col-lg-8.centrado.text-center{
         padding-top: 200px*/
         background: url('http://idearte.camxim.com/img/bg-internas.png')
     }
-
-    .intro-servicios .servicios-body .frase-principal {
-        margin: 0 0 4rem
-        font-family: 'europa',"Helvetica Neue",Helvetica,Arial,sans-serif
-        font-size: 6rem
-        font-weight: 400
-        letter-spacing: 1px
-        line-height: 8.5rem
-        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5)
-        font-size 5.5rem
-    }
-
+    
     .intro-blog{
         height: 75%
         padding: 0
@@ -1181,6 +1233,7 @@ h1.col-lg-8.centrado.text-center{
     -moz-transition: all .2s ease-in-out
     transition: all .2s ease-in-out
     font-size 1.9rem
+    letter-spacing 1px
     }
     
     li.display-none{
@@ -1194,12 +1247,12 @@ h1.col-lg-8.centrado.text-center{
     }
 
     .servicios-section .titulo-h2{
-        font-size 3rem
-        color #1f1f1f
+        font-size 4rem
+        color gray
         margin-bottom 1.3em
         text-align center
-    }/* DESKTOP Y TABLE = style="font-size:4rem; color:gray; margin-bottom:1.2em;"*/
-    
+    }
+     
     .servicios-section a{
     color: rgb(21, 21, 21)
     }
@@ -1223,8 +1276,8 @@ h1.col-lg-8.centrado.text-center{
         text-align center
         }
 
-    .section-otros p{
-
+    #otros p{
+        text-align justify
     }
 
     .section-otros h3{
@@ -1272,6 +1325,40 @@ h1.col-lg-8.centrado.text-center{
     display: table-cell
     vertical-align: middle
     }
+    
+    /*******FIN INDEX************/
+        
+        
+    /************ACERCA***************/   
+         
+    .portada-acerca{
+    background: url(http://idearte.camxim.com/img/acerca/portada-acerca.jpg) no-repeat center center scroll
+    background-attachment: fixed
+    }
+    
+    /************ACERCA***************/
+        
+        
+    /************EQUIPO***************/
+        
+    .portada-equipo{
+        background: url(http://idearte.camxim.com/img/equipo/portada-equipo.jpg) no-repeat center center scroll
+        background-attachment: fixed
+        background-color: white
+    }
+    
+    /************EQUIPO***************/
+        
+
+    /************CONTACTO***************/
+    
+    .portada-contacto{
+        background: url(http://idearte.camxim.com/img/contacto/portada-contacto.jpg) no-repeat bottom center scroll
+        background-color: white
+    }
+    
+    /************CONTACTO***************/
+        
 
     /**********FOOTER**********/
     .logo-footer{
@@ -1341,10 +1428,11 @@ h1.col-lg-8.centrado.text-center{
     footer a:hover {
         color: white
     }
-
-.light {
-    font-weight: 400
-}
+    
+    .col-lg-12.text-center{
+        text-align right
+        padding-right 40px
+    }
 
 .navbar-custom {
     padding: 20px 0
@@ -1436,17 +1524,6 @@ h1.col-lg-8.centrado.text-center{
         background-attachment: fixed
 }
 
-.portada-contacto{
-        background: url(http://idearte.camxim.com/img/contacto/portada-contacto.jpg) no-repeat bottom center scroll
-        background-color: white
-}
-
-.portada-equipo{
-        background: url(http://idearte.camxim.com/img/equipo/portada-equipo.jpg) no-repeat center center scroll
-        background-attachment: fixed
-        background-color: white
-}
-
 .portada-branding{
         background: url(http://idearte.camxim.com/img/imagen-corporativa/imagen-corporativa.jpg) no-repeat bottom center scroll
         background-attachment: fixed
@@ -1459,10 +1536,6 @@ h1.col-lg-8.centrado.text-center{
         background-color: white
 }
 
-.portada-about{
-        background: url(http://idearte.camxim.com/img/acerca/portada-acerca.jpg) no-repeat center center scroll
-        background-attachment: fixed
-}
 
 .descripcion_servicio{
         background: url(http://idearte.camxim.com/img/portada-web.jpg) no-repeat top center scroll
@@ -1488,7 +1561,6 @@ h1.col-lg-8.centrado.text-center{
     -moz-background-size: cover
     background-size: cover
     -o-background-size: cover
-    height: 540px
 }
 
 h2.servicios-heading{
@@ -1979,55 +2051,9 @@ font-weight: 400
 }
 
 
-.equipo{
-    text-align: center
-    background: white
-    padding: 0 0
-}
-
-.equipo-perfil{
-    padding-top: 7rem
-    margin-bottom: 70px
-}
-
-.fotoperfil{
-    margin-bottom: 2rem
-    text-align: center
-    margin: 0 2.0rem
-    padding: 0 2.5em
-}
-
-.fotoperfil h4 {
-font-size: 2.4rem
-color: black
-padding: 4px 0
-margin-bottom: 0
-border-radius: 30px
-width: 100%
-margin: 0 auto
-font-weight: 100
-}
-
-.fotoperfil img {
-    width: 100%
-    border-radius: 50%
-    margin-bottom: 1rem
-    -webkit-transition: all 1s ease-out  /* Chrome y Safari */
-    -o-transition: all 1s ease-out  /* Opera */
-    -moz-transition: all 1s ease-out  /* Mozilla Firefox */
-    -ms-transition: all 1s ease-out   /* Internet Explorer */
-    transition: all 1s ease-out  /* W3C */
-}
-
-
-.fotoperfil img:hover {
-    -webkit-transform: translate3d(0,0,0)
-    transition:all 1s ease-out
-}
-
-.equipo .descripcionperfil p{
-    font-size: 4rem
-}
+// .equipo .descripcionperfil p{
+//     font-size: 4rem
+// }
 
  
 /*dropdown*/
@@ -2088,10 +2114,6 @@ color: #FFFCFC
     
     button{
         display none
-    }
-
-    .is-active{
-        display block
     }
 
     /************NAV************/
@@ -2235,14 +2257,13 @@ color: #FFFCFC
 
     .intro-servicios .servicios-body .frase-principal {
         margin: 0 0 4rem
-        font-family: 'europa',"Helvetica Neue",Helvetica,Arial,sans-serif
-        font-size: 6rem
         font-weight: 400
         letter-spacing: 1px
-        line-height: 8.5rem
+        line-height: 6.5rem
         text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5)
-        font-size 5.5rem
+        font-size 6rem
     }
+
 
     .intro-blog{
         height: 75%
@@ -2376,6 +2397,63 @@ color: #FFFCFC
     .twitter-frame{
         display: none
     }
+    
+    /*********ACERCA********/
+        
+    .portada-acerca{
+        background: url(http://idearte.camxim.com/img/acerca/portada-acerca-medium.jpg) no-repeat center center scroll
+        background-attachment: fixed
+    }
+
+    .intro-servicios a{
+        display none
+    }
+    
+    header a{
+        display none
+    }
+    /*********ACERCA********/
+    
+
+    /************EQUIPO***************/
+        
+    .portada-equipo{
+        background: url(http://idearte.camxim.com/img/equipo/portada-equipo.jpg) no-repeat center center scroll
+        background-attachment: fixed
+        background-color: white
+    }
+    
+    /************EQUIPO***************/
+
+
+    /************CONTACTO***************/
+    
+    .portada-contacto{
+        background: url(http://idearte.camxim.com/img/contacto/portada-contacto.jpg) no-repeat bottom center scroll
+        background-color: white
+    }
+    
+    .intro-contacto .servicios-body {
+        display: table-cell
+/*        vertical-align: middle
+        padding-top: 200px*/
+        background: url('http://idearte.camxim.com/img/bg-internas.png')
+    }
+
+    .intro-contacto {
+    display: table
+    width: 100%
+    min-height: 60%
+    text-align: left
+    color: #fff
+    -webkit-background-size: cover
+    -moz-background-size: cover
+    background-size: cover
+    -o-background-size: cover
+}
+    
+    /************CONTACTO***************/
+
 
     /**********FOOTER**********/
     .logo-footer{
@@ -2450,6 +2528,10 @@ color: #FFFCFC
 
 @media(max-width:600px) {/*IPHONE 6 PLUS*/
     
+    header a{
+        display none
+    }
+
     button{
         display none
     }
@@ -2469,6 +2551,7 @@ color: #FFFCFC
     
     li.display-none.alto-li{
         padding 6px 0
+        display block
     }
 
 
@@ -2532,17 +2615,7 @@ color: #FFFCFC
     li.dropdown.displaynone{
         display none
     }
-
-    .portada-index{
-        background url(http://idearte.camxim.com/img/portada-index-smal.png) center center
-        background-attachment fixed
-    }
-
-    .portada-disenoweb{
-        background url(http://idearte.camxim.com/img/disenoweb/portada-diseno-web.jpg) no-repeat top center scroll
-        background-attachment fixed
-    }
-
+    
     .Header{
         color white
         padding 10px
@@ -2577,7 +2650,7 @@ color: #FFFCFC
     .menu{
         display: table !important
         opacity: 1
-        -webkit-transition: 1saf
+        -webkit-transition: 1s
     }
     
     .Header #nav{
@@ -2625,8 +2698,14 @@ color: #FFFCFC
         text-transform: uppercase
         color: #454242 !important
     }
+    
+    /****************INDEX**************/
 
-
+    .portada-index{
+        background: url("http://idearte.camxim.com/img/portada-index-smal.png") center center
+        background-attachment: fixed
+    }
+    
     /********MENSAJE*********/
 
     .forkit-curtain{
@@ -2673,12 +2752,11 @@ color: #FFFCFC
 
     .intro-servicios .servicios-body .frase-principal {
         margin: 0 0 4rem
-        font-size: 6rem
         font-weight: 400
         letter-spacing: 1px
-        line-height: 4.5rem
+        line-height: 6.5rem
         text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5)
-        font-size 3.4rem
+        font-size 3.4rem  !important
     }
 
     .intro-blog{
@@ -2804,6 +2882,58 @@ color: #FFFCFC
     .twitter-frame{
         display: none
     }
+    
+    
+    /***************FIN INDEX***************/
+        
+    /********ACERCA*********/
+        
+    .portada-acerca{
+        background: url(http://idearte.camxim.com/img/acerca/portada-acerca-medium.jpg) no-repeat center center scroll
+        background-attachment: fixed
+    }
+
+    .intro-servicios a{
+        display none
+    }
+    
+    .col-lg-12.centrado.text-center{
+        margin-left 34px
+    }
+    /************ACERCA***************/
+        
+    /************EQUIPO***************/
+        
+    .portada-equipo{
+        background: url(http://idearte.camxim.com/img/equipo/portada-equipo.jpg) no-repeat center center scroll
+        background-attachment: fixed
+        background-color: white
+    }
+    
+    /************EQUIPO***************/
+        
+
+
+    /************CONTACTO***************/
+    
+    .portada-contacto{
+        background: url(http://idearte.camxim.com/img/contacto/portada-contacto.jpg) no-repeat bottom center scroll
+        background-color: white
+    }
+    
+    .intro-contacto {
+    display: table
+    width: 100%
+    min-height: 60%
+    text-align: left
+    color: #fff
+    -webkit-background-size: cover
+    -moz-background-size: cover
+    background-size: cover
+    -o-background-size: cover
+}
+    
+    /************CONTACTO***************/
 
 
     /*********FOOTER*********/
@@ -2867,6 +2997,7 @@ color: #FFFCFC
     footer a:hover {
         color white
     }
+    
 
 } /*FIN INDEX IPHONE 6 PLUS*/
 
@@ -2874,7 +3005,7 @@ color: #FFFCFC
 /* Estilos del formulario */
 form.contacto {
     margin: 0 auto 0
-    width: 100%
+    width: 440px
 }
 form.contacto fieldset {
 
