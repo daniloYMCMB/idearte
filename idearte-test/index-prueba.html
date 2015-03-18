@@ -19,7 +19,7 @@
     <link href="http://idearte.camxim.com/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="http://idearte.camxim.com/css/grayscale.css?v=2.0" rel="stylesheet">
+    <link href="http://idearte.camxim.com/css/estilos.css?v=2.0" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="http://idearte.camxim.com/css/normalize.css">
 
@@ -43,6 +43,7 @@
         
     <script src="js/jquery-2.1.1.js"></script>
     <script src="js/main.js"></script> <!-- Resource jQuery -->
+    <script src="js/hammer.min.js"></script>
 
     <!-- <link rel="stylesheet" href="css/reset.css">  --><!-- CSS reset -->
     <link rel="stylesheet" href="http://idearte.camxim.com/css/textslide.css"> <!-- Resource style -->
@@ -73,10 +74,10 @@
  
     <!-- Navigation -->
 
-        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <nav class="navbar navbar-fixed-top" role="navigation">
         <div class="container">
                 <a class="navbar-brand page-scroll" href="http://idearte.camxim.com/">
-                    <span class="light" style="font-family:amaranthregular; font-size: 43px;">idearte.</span>
+                    <span>idearte.</span>
                 </a>
             
             <button id="verMenu" class="navbar-toggle is-active" data-toggle="collapse" data-target=".navbar-main-collapse" style="margin-top: 0;">
@@ -132,35 +133,6 @@
             </div>
             <!-- /.navbar-collapse -->
 
-
-            <!-- Menu de bigdropinc.com -->
-            <!-- <div class="Header">
-                <button class="btn-menu" id="showMenu">MENU</button>
-                <nav id="nav" role="navigation">
-                    <ul class="MainMenu">
-                        <li class="MainMenu-item">
-                            <a href="http://idearte.camxim.com/acerca/" class="MainMenu-link">Acerca</a>
-                        </li>
-                        <li class="MainMenu-item">
-                            <a href="http://idearte.camxim.com/servicios/diseño-web"  class="MainMenu-link">Diseño Web</a>
-                        </li>
-                        <li class="MainMenu-item">
-                            <a href="http://idearte.camxim.com/servicios/marketing-digital" class="MainMenu-link">Marketing Digital</a>
-                        </li>
-                        <li class="MainMenu-item">
-                            <a href="http://idearte.camxim.com/servicios/imagen-corporativa" class="MainMenu-link">Imagen Corporativa</a>
-                        </li>
-                        <li class="MainMenu-item">
-                            <a href="http://idearte.camxim.com/equipo/" class="MainMenu-link">Equipo</a>
-                        </li>
-                        <li class="MainMenu-item">
-                            <a href="http://idearte.camxim.com/contacto/" class="MainMenu-link">Contacto</a>
-                        </li>
-                    </ul>
-                    <button class="btn-close" id="hideMenu">X</button>
-                </nav>
-            </div> -->
-
         </div>
         <!-- /.container -->
     </nav>
@@ -210,7 +182,7 @@
 
 
     <!-- Intro Header -->
-    <header class="intro-servicios portada-index content-section u-verticalCenter">
+    <header class="format portada-index u-verticalCenter">
         <div class="container-fluid u-verticalContent servicios-body" style="padding:0; vertical-align:middle;">
             <div class="container">
                 <div class="col-xs-12 col-md-10 col-md-offset-1 animated flipInX text-center">
@@ -259,12 +231,12 @@
     <section id="servicios" class="servicios-section" style="background: #f3f3f3;">
         <div class="container text-center" style="padding: 0;">
 
-            <h2 class="titulo-h2"><span>Nuestros </span><span>Servicios</span></h2>
+            <h2 class="titulo-servicios"><span>Nuestros </span><span>Servicios</span></h2>
 
             <div id="ross" class="col-sm-4 col-md-4">
                 <a href="http://idearte.camxim.com/servicios/diseño-web">
                     <img class="icono-home animacion" src="img/iconos/home-diseno.svg">
-                    <h2>Diseño Web</h2>
+                    <h2 class="servicio-individual">Diseño Web</h2>
                 </a>
                     <p>Diseño adaptable<br>
                     Diseño UI/UX<br>
@@ -299,7 +271,7 @@
 
 
 
-    <section id="otros" class="content-section u-verticalCenter">
+    <section id="otros" class="otros u-verticalCenter">
         <div class="container section-otros u-verticalContent">
             <div class="container">
                 <div class="col-md-12 col-lg-4">
@@ -380,7 +352,7 @@
                         <li><a class="soc-instagram" href="#"></a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-12 text-center">
+                    <div class="col-lg-12 text-center copyrigth">
                         <p>Copyright 2015 © idearte Inc.</p>
                     </div>
             </section>
