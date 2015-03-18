@@ -247,13 +247,11 @@
     </header>
 
     <section id="mensaje" class="mensaje-section u-verticalCenter ">
-        <div class="container-fluid u-verticalContent">
-            <div class="container">
-                <h1 class="col-lg-8 centrado text-center" style="line-height:1.4;">Somos una agencia de <strong>Marketing Digital y 
-                    Diseño Web.</strong><br>Creamos experiencias digitales únicas utilizando las
-                    últimas <br>tendencias en diseño, tecnología  y comunicación.
-                </h1>
-            </div>
+        <div class="container">
+            <h1 class="col-lg-8 centrado text-center" style="line-height:1.4;">Somos una agencia de <strong>Marketing Digital y 
+                Diseño Web.</strong><br>Creamos experiencias digitales únicas utilizando las
+                últimas <br>tendencias en diseño, tecnología  y comunicación.
+            </h1>
         </div>
     </section>
     
@@ -395,10 +393,6 @@
         var $buttonOcultarMenu = document.getElementById('ocultarMenu');
         var $menu = document.getElementById('nav');
 
-        var $body = document.querySelector('body');
-
-        var body = new Hammer($body);
-
         var verMenu = function(){
             $buttonVerMenu.classList.remove('is-active');
             $buttonOcultarMenu.classList.add('is-active');
@@ -413,9 +407,6 @@
 
         $buttonVerMenu.addEventListener("click", verMenu);
         $buttonOcultarMenu.addEventListener("click", ocultarMenu);
-
-        body.on('panright', verMenu)
-        body.on('panleft', ocultarMenu)
 
     </script>
     

@@ -25,12 +25,12 @@
             var datos = 'nombre='+ nombre + '&email=' + email + '&telefono=' + telefono + '&empresa=' + empresa +'&mensaje=' + mensaje;
             $.ajax({
                 type: "POST",
-                url: "http://test.camxim.com/empresaweb/contacto/proceso.php",
+                url: "http://idearte.camxim.com/contacto/proceso.php",
                 data: datos,
                 success: function() {
                     // $('.ajaxgif').hide();
                     // $('.msg').text('Mensaje OK!').addClass('msg_ok').animate({ 'right' : '130px' }, 300); 
-                    location.href = "http://test.camxim.com/empresaweb/gracias";
+                    location.href = "http://idearte.camxim.com/gracias/";
                 },
                 error: function() {
                     $('.ajaxgif').hide();

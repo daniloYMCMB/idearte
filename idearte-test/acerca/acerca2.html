@@ -209,30 +209,28 @@
 
     <script src="http://idearte.camxim.com/js/forkit.js"></script>
 
+
     <!-- Intro Header -->
-    <header class="intro-servicios portada-equipo content-section">
-        <div class="servicios-body" style="padding:0; vertical-align:middle;">
+    <header class="intro-servicios portada-acerca content-section u-verticalCenter">
+        <div class="container-fluid u-verticalContent servicios-body" style="padding:0; vertical-align:middle;">
             <div class="container">
-                <div class="container animated bounceInDown portada">
-                    <div class="col-lg-9 centrado text-center">
-                                        <h1 class="frase-principal">Solo un <strong>gran equipo</strong> puede
-                                            <br>lograr <strong>grandes resultados.</strong></h1>
-                                    <div>
-                                <div>     
-                                </div>
-                         <a data-scroll="" href="#equipo" class="action-button shadow animate yellow" style="margin-left:32px;">
-                        Conócenos</a>
-                                    </div>
-                                </div></div></li>
-                            </ul>
-                </div>  
+                <div class="col-xs-12 col-md-10 col-md-offset-1 animated flipInX text-center">
+                    <p class="intro-text">
+                        <section class="cd-intro ancho">
+                            <h1 class="frase-principal">Somos <strong>estrategas</strong> de profesión y <strong>creativos</strong> por naturaleza.</h1>
+                        <a data-scroll href="#acerca" class="action-button shadow animate yellow">
+                        Conócenos</a></h1>
+                        </section>
+                    </p>
+                </div>
             </div>
 
             <div class="arrow-portada">
-                <a data-scroll="" href="#equipo" class="btn btn-circle-portada page-scroll">
+                <a data-scroll href="#mensaje" class="btn btn-circle-portada page-scroll">
                     <i class="fa fa-angle-double-down floating"></i>
                 </a>
             </div>
+
 
             <div class="barraflecha">
                 <div class="barra-horizontal left"></div>
@@ -240,77 +238,6 @@
             </div>
         </div>
     </header>
-
-    <!-- Especificaciones Diseño Web -->
-    <section id="equipo" class="content-section equipo">
-        <div class="container equipo-perfil">
-
-            <div class="col-sm-6 col-md-4 altura">
-                <div class="fotoperfil">
-                <img src="http://idearte.camxim.com/img/equipo/francesco.JPG" alt="Francesco">
-                <h4>Francesco Saco</h4>
-                <p class="equipo-cargo"><strong>Marketing Digital</strong></p>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 altura">
-                <div class="fotoperfil">
-                <img src="http://idearte.camxim.com/img/equipo/Rosa.JPG" alt="Lorena">
-                <h4>Lorena Salazar</h4>
-                <p class="equipo-cargo"><strong>Especilista SEO/SEM</strong></p>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 altura">
-                <div class="fotoperfil">
-                <img src="http://idearte.camxim.com/img/equipo/alysa.JPG" alt="Ana">
-                <h4>Ximena Wong</h4>
-                <p class="equipo-cargo"><strong>Diseñadora UI/UX</strong></p>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 altura">
-                <div class="fotoperfil">
-                <img src="http://idearte.camxim.com/img/equipo/diego.JPG" alt="Diego">
-                <h4>Diego Verástegui</h4>
-                <p class="equipo-cargo"><strong>Diseñador Senior</strong></p>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 altura">
-                <div class="fotoperfil">
-                <img src="http://idearte.camxim.com/img/equipo/Robert.JPG" alt="Sebastián">
-                <h4>Roberto Medina</h4>
-                <p class="equipo-cargo"><strong>Ingeniero QA</strong></p>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 altura">
-                <div class="fotoperfil">
-                <img src="http://idearte.camxim.com/img/equipo/sergio.JPG" alt="Sergio">
-                <h4>Sergio Rojas</h4>
-                <p class="equipo-cargo"><strong>Desarrollo Comercial</p>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 altura">
-                <div class="fotoperfil">
-                <img src="http://idearte.camxim.com/img/equipo/Manuel.jpg" alt="Manuel">
-                <h4>Manuel Acuña</h4>
-                <p class="equipo-cargo"><strong>Programador Senior</p>
-                </div>
-            </div>
-
-
-            <div class="col-sm-6 col-md-4 altura">
-                <div class="fotoperfil">
-                <img src="http://idearte.camxim.com/img/equipo/danilo.jpg" alt="Danilo">
-                <h4>Danilo Viacava</h4>
-                <p class="equipo-cargo"><strong>Programador</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Footer -->
     <footer>
@@ -362,10 +289,6 @@
         var $buttonOcultarMenu = document.getElementById('ocultarMenu');
         var $menu = document.getElementById('nav');
 
-        var $body = document.querySelector('body');
-
-        var body = new Hammer($body);
-
         var verMenu = function(){
             $buttonVerMenu.classList.remove('is-active');
             $buttonOcultarMenu.classList.add('is-active');
@@ -380,9 +303,6 @@
 
         $buttonVerMenu.addEventListener("click", verMenu);
         $buttonOcultarMenu.addEventListener("click", ocultarMenu);
-
-        body.on('panright', verMenu)
-        body.on('panleft', ocultarMenu)
 
     </script>
     
@@ -429,4 +349,3 @@
 </body>
 
 </html>
-

@@ -15,7 +15,7 @@ $headers .= 'MIME-Version: 1.0' . "\n";
 $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
  
 // Aqui definimos el asunto y armamos el cuerpo del mensaje
-$asunto = "Contacto - Empresa Web";
+$asunto = "Contacto ";
 $cuerpo .= "Nombre: ".$nombre."<br>";
 $cuerpo .= "Email: ".$email."<br>";
 $cuerpo .= "Telefono: ".$telefono."<br>";

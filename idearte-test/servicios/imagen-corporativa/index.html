@@ -39,8 +39,8 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto:500,300,700,400' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Muli:300,400' rel='stylesheet' type='text/css'>
         
-    <script src="js/jquery-2.1.1.js"></script>
-    <script src="js/main.js"></script> <!-- Resource jQuery -->
+    <script src="http://idearte.camxim.com/js/jquery-2.1.1.js"></script>
+    <script src="http://idearte.camxim.com/js/main.js"></script> <!-- Resource jQuery -->
 
     <!-- <link rel="stylesheet" href="css/reset.css">  --><!-- CSS reset -->
     <link rel="stylesheet" href="http://idearte.camxim.com/css/textslide.css"> <!-- Resource style -->
@@ -67,55 +67,60 @@
 </head>
 
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body id="page-top" data-spy="scroll" data-target="navbar-fixed-top" >
 
-
+ 
     <!-- Navigation -->
 
         <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
-            <div class="navbar-header">
-                <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
-                </button> -->
                 <a class="navbar-brand page-scroll" href="http://idearte.camxim.com/">
-                    <!-- <i class="fa fa-play-circle"></i>   -->
-                    <span class="light" style="font-family:amaranthregular; font-size: 33px">idearte.</span>
-                    <!-- <span class="text-yellow">WEB</span> -->
-                    <!-- <img src="http://idearte.camxim.com/img/idearte-02.png" style="width:100px; margin-left:10px;"> -->
+                    <span class="light" style="font-family:amaranthregular; font-size: 43px;">idearte.</span>
                 </a>
-            </div>
+            
+            <button id="verMenu" class="navbar-toggle is-active" data-toggle="collapse" data-target=".navbar-main-collapse" style="margin-top: 0;">
+                <span class="glyphicon glyphicon-align-justify" style="color: white; font-size: 30px; padding: 0px 13px 13px 14px"></span>          
+            </button>
+            <button id="ocultarMenu" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse" style="margin-top: 0;">
+                <span class="glyphicon glyphicon-align-justify" style="color: white; font-size: 30px; padding: 0px 13px 13px 14px"></span>          
+            </button>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse" style="background: transparent;">
+                <ul class="nav navbar-nav" style="text-align: center;">
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                    <li>
-                        <a class="p0age-scroll" href="http://idearte.camxim.com/acerca/">Acerca</a>
+                    <li class="alto-li">
+                        <a class="page-scroll" href="http://idearte.camxim.com/acerca/">Acerca</a>
                     </li>
-                    <li role="presentation" class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
-                      Servicios
-                    </a>
-                    <ul class="dropdown-menu" role="menu">
-                        <div class="arrow-up-servicios"></div>
-                      <li>
-                        <a class="page-scroll" href="http://idearte.camxim.com/servicios/disenoweb.html">Diseño Web</a>
+                    <li class="display-none alto-li">
+                        <a class="page-scroll" href="http://idearte.camxim.com/servicios/diseño-web">Diseño Web</a>
                     </li>
-<!--                     <li>
-                        <a class="page-scroll" href="http://idearte.camxim.com/servicios/aplicaciones.html">Aplicaciones Móviles</a>
-                    </li> -->
-                    <li>
-                        <a class="page-scroll" href="http://idearte.camxim.com/servicios/marketing.html">Marketing Digital</a>
+                    <li class="display-none alto-li">
+                        <a class="page-scroll" href="http://idearte.camxim.com/servicios/marketing-digital">Marketing Digital</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="http://idearte.camxim.com/servicios/branding.html">Imagen Corporativa</a>
+                    <li class="display-none alto-li">
+                        <a class="page-scroll" href="http://idearte.camxim.com/servicios/imagen-corporativa">Imagen Corporativa</a>
                     </li>
-                    </ul>
-                  </li>
+                    <li role="presentation" class="dropdown displaynone">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                          Servicios
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <div class="arrow-up-servicios"></div>
+                            <li>
+                                <a class="page-scroll" href="http://idearte.camxim.com/servicios/diseño-web">Diseño Web</a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="http://idearte.camxim.com/servicios/marketing-digital">Marketing Digital</a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="http://idearte.camxim.com/servicios/imagen-corporativa">Imagen Corporativa</a>
+                            </li>
+                        </ul>
+                    </li>
                     <li>
                         <a class="page-scroll" href="http://idearte.camxim.com/equipo/">Equipo</a>
                     </li>
@@ -125,9 +130,40 @@
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
+
+
+            <!-- Menu de bigdropinc.com -->
+            <!-- <div class="Header">
+                <button class="btn-menu" id="showMenu">MENU</button>
+                <nav id="nav" role="navigation">
+                    <ul class="MainMenu">
+                        <li class="MainMenu-item">
+                            <a href="http://idearte.camxim.com/acerca/" class="MainMenu-link">Acerca</a>
+                        </li>
+                        <li class="MainMenu-item">
+                            <a href="http://idearte.camxim.com/servicios/diseño-web"  class="MainMenu-link">Diseño Web</a>
+                        </li>
+                        <li class="MainMenu-item">
+                            <a href="http://idearte.camxim.com/servicios/marketing-digital" class="MainMenu-link">Marketing Digital</a>
+                        </li>
+                        <li class="MainMenu-item">
+                            <a href="http://idearte.camxim.com/servicios/imagen-corporativa" class="MainMenu-link">Imagen Corporativa</a>
+                        </li>
+                        <li class="MainMenu-item">
+                            <a href="http://idearte.camxim.com/equipo/" class="MainMenu-link">Equipo</a>
+                        </li>
+                        <li class="MainMenu-item">
+                            <a href="http://idearte.camxim.com/contacto/" class="MainMenu-link">Contacto</a>
+                        </li>
+                    </ul>
+                    <button class="btn-close" id="hideMenu">X</button>
+                </nav>
+            </div> -->
+
         </div>
         <!-- /.container -->
     </nav>
+
 
     <!-- The contents (if there's no contents the ribbon acts as a link) -->
     <div class="forkit-curtain">
@@ -135,7 +171,7 @@
             <div class="row cotizar">
                 <h2>Solicite una <strong>Cotización</strong></h2>   
                 <form method="post" class="contacto">
-                    <fieldset>
+                    <fieldset style="border:none;">
                         <div class="col-xs-6">
                         <input type="text" class="nombre" placeholder="Nombre" name="nombre" />
                         </div>
@@ -165,18 +201,16 @@
         <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
         <script type="text/javascript" src="http://idearte.camxim.com/js/funciones.js"></script>
     </div>
-            </div>
 
     <!-- The ribbon -->
 
-    <a class="forkit" data-text="Cotizar" data-text-detached="Arrastra hacia abajo >" href="#"><img style="position: absolute; top: 0; right: 0; border: 0;" alt="Cotizar"></a>
+    <a class="forkit" data-text="Cotizar" data-text-detached="Arrastra hacia abajo >" href="#"><img style="position: absolute; top: 0; right: 0; border: 0; width: auto;" alt="Cotizar"></a>
 
     <script src="http://idearte.camxim.com/js/forkit.js"></script>
 
-
     <!-- Intro Header -->
-    <header class="intro-servicios portada-branding content-section">
-        <div class="servicios-body">
+    <header class="intro-servicios portada-imagen-corporativa content-section">
+        <div class="servicios-body" style="padding:0; vertical-align:middle;">
             <div class="container">
                 <div class="row">
                     <div class="col-md-5 animated fadeInDownBig">
@@ -197,7 +231,7 @@
         </div>
     </header>
 
-    <div id="servicios" class="servicios-section-titulo" style="height: 270px">
+    <div id="servicios" class="servicios-section-titulo" style="height: auto; padding-bottom:7rem">
         <div class="container mensaje-servicios">
             <p class="col-lg-9 centrado text-center" style="line-height:1.4; font-size:2.4rem;">Una imagen 
                 corporativa profesionalmente desarrollada,<br> sólida y bien definida influye en la decisión de 
@@ -207,56 +241,54 @@
     </div>
 
 
-    <div class="container text-center servicios_iconos" style="height:247px; margin-top:15px; margin-bottom:200px;">
-        <div class="col-sm-4 col-md-4">
-            <img class="icono-home" src="http://idearte.pe/img/imagen-corporativa/branding_logo.png" alt="Logotipo">
-            <h2>Logotipo</h2>
-        </div>
+    <div class="container text-center servicios_iconos" style="height:auto; background:#f3f3f3;
+    width:100%; padding: 7rem 0;">
+        <div class="container">
+            <div class="col-sm-12 col-md-4">
+                <img class="icono-home" src="http://idearte.pe/img/imagen-corporativa/branding_logo.png" alt="Logotipo">
+                <h2>Logotipo</h2>
+            </div>
 
-        <div class="col-sm-4 col-md-4">
-            <img class="icono-home" src="http://idearte.pe/img/iconos/home-logo.svg" alt="Manual de Identidad">
-            <h2>Manual de Identidad</h2>
-        </div>
+            <div class="col-sm-12 col-md-4">
+                <img class="icono-home" src="http://idearte.pe/img/iconos/home-logo.svg" alt="Manual de Identidad">
+                <h2>Manual de Identidad</h2>
+            </div>
 
-        <div class="col-sm-4 col-md-4">
-            <img class="icono-home" src="http://idearte.pe/img/imagen-corporativa/branding_papeleria.png" alt="Papalería">
-            <h2>Papelería</h2>
+            <div class="col-sm-12 col-md-4">
+                <img class="icono-home" src="http://idearte.pe/img/imagen-corporativa/branding_papeleria.png" alt="Papalería">
+                <h2>Papelería</h2>
+            </div>
         </div>
     </div>   
 
     <!-- Footer -->
-        <footer>
+    <footer>
         <section class="container-fluid subfooter">
-            <section id="contact" class="container content-section">
-                    <div class="col-lg-3 padding-rl">
-                        <a style="width: 250px;" class="navbar-brand page-scroll logo-footer" href="http://idearte.pe/">
-                            <!-- <i class="fa fa-play-circle"></i>  
-                            <span class="light">EMPRESA</span>
-                            <span class="text-yellow">WEB</span> -->
-                            <span class="light logo-footer-p" style="font-family:amaranthregular; font-size: 33px; margin-left:10px;">
-                                idearte.
-                            </span>
+            <section id="contact" class="container footer-section">
+                    <div class="col-lg-3">
+                        <a class="light page-scroll logo-footer" href="http://idearte.camxim.com/">
+                        idearte.
                         </a>
                         <p>Javier Prado E. 6712</p>
                         <p>Oficina 401</p>
                         <p>Lima, Perú</p>
                     </div>
-                    <div class="col-lg-3 padding-rl">
+                    <div class="col-lg-3">
                         <p class="logo-footer-p">Contacto</p>
                         <p>(811) 424-4329</p>
-                        <a href="mailto:contacto@idearte.pe">
-                            <u>contacto@idearte.pe</u>
+                        <a href="mailto:contacto@idearteinc.com">
+                            <u>contacto@idearteinc.com</u>
                         </a>
                     </div>
-                    <div class="col-lg-3 padding-rl">
+                    <div class="col-lg-3">
                         <p class="logo-footer-p">Oportunidades</p>
                         <p>En idearte siempre estamos en 
                             búsqueda de talento.</p>
-                        <a href="mailto:talento@idearte.pe">
-                            <u>talento@idearte.pe</u>
+                        <a href="mailto:talento@idearteinc.com">
+                            <u>talento@idearteinc.com</u>
                         </a>
                     </div>
-                    <div class="col-lg-3 padding-rl">
+                    <div class="col-lg-3">
                         <p class="logo-footer-p">Síguenos en</p>
                         <ul class="soc">
                         <li><a class="soc-facebook" href="#"></a></li>
@@ -267,23 +299,36 @@
                         <li><a class="soc-instagram" href="#"></a></li>
                         </ul>
                     </div>
-            </section>
-        </section>
-
-        <section class="container-fluid subfooter-bottom">
-            <section id="contact" class="container content-section">
-                <div class="row">
-                    <div class="col-lg-12 text-right">
+                    <div class="col-lg-12 text-center">
                         <p>Copyright 2015 © idearte Inc.</p>
                     </div>
-                </div>
             </section>
         </section>
     </footer>
 
-  
+    <script type="text/javascript">
+        var $buttonVerMenu = document.getElementById('verMenu');
+        var $buttonOcultarMenu = document.getElementById('ocultarMenu');
+        var $menu = document.getElementById('nav');
+
+        var verMenu = function(){
+            $buttonVerMenu.classList.remove('is-active');
+            $buttonOcultarMenu.classList.add('is-active');
+            $menu.classList.add('is-active');
+        }
+
+        var ocultarMenu = function(){
+            $buttonVerMenu.classList.add('is-active');
+            $buttonOcultarMenu.classList.remove('is-active');
+            $menu.classList.remove('is-active');
+        }
+
+        $buttonVerMenu.addEventListener("click", verMenu);
+        $buttonOcultarMenu.addEventListener("click", ocultarMenu);
+
+    </script>
     
-    <script src="../js/smooth-scroll.js"></script> <!-- Desplazamiento suave -->
+    <script src="http://idearte.camxim.com/js/smooth-scroll.js"></script> <!-- Desplazamiento suave -->
     <script>
         
             smoothScroll.init({
@@ -298,22 +343,22 @@
     </script>
 
     <!-- jQuery -->
-    <script src="../js/jquery.js"></script>
+    <script src="http://idearte.camxim.com/js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="../js/bootstrap.min.js"></script>
+    <script src="http://idearte.camxim.com/js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="../js/jquery.easing.min.js"></script>
+    <script src="http://idearte.camxim.com/js/jquery.easing.min.js"></script>
 
     <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="../js/grayscale.js"></script>
+    <script src="http://idearte.camxim.com/js/grayscale.js"></script>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
-    <script src="../js/viewportchecker.js"></script> 
+    <script src="http://idearte.camxim.com/js/viewportchecker.js"></script> 
     <script type="text/javascript">
     jQuery(document).ready(function() {
         jQuery('.post').addClass("hidden").viewportChecker({
@@ -322,6 +367,11 @@
        });   
     });            
     </script>
+
+</body>
+
+</html>
+
 
 
 </body>

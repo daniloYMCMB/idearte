@@ -1,0 +1,1373 @@
+/*@import "nib"*/
+
+@font-face {
+    font-family: 'amaranthregular'
+    src: url('http://idearte.camxim.com/css/fonts/Amaranth-Regular-webfont.eot')
+    src: url('http://idearte.camxim.com/css/fonts/Amaranth-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://idearte.camxim.com/css/fonts/Amaranth-Regular-webfont.woff2') format('woff2'),
+         url('http://idearte.camxim.com/css/fonts/Amaranth-Regular-webfont.woff') format('woff'),
+         url('http://idearte.camxim.com/css/fonts/Amaranth-Regular-webfont.ttf') format('truetype'),
+         url('http://idearte.camxim.com/css/fonts/Amaranth-Regular-webfont.svg#amaranthregular') format('svg')
+    font-weight: normal
+    font-style: normal
+}
+
+
+@font-face {
+    font-family: 'icomoon'
+    src:url('http://idearte.camxim.com/css/fonts/icomoon.eot?-rgvwq5')
+    src:url('http://idearte.camxim.com/css/fonts/icomoon.eot?#iefix-rgvwq5') format('embedded-opentype'),
+        url('http://idearte.camxim.com/css/fonts/icomoon.woff?-rgvwq5') format('woff'),
+        url('http://idearte.camxim.com/css/fonts/icomoon.ttf?-rgvwq5') format('truetype'),
+        url('http://idearte.camxim.com/css/fonts/icomoon.svg?-rgvwq5#icomoon') format('svg')
+    font-weight: normal
+    font-style: normal
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon'
+    speak: none
+    font-style: normal
+    font-weight: normal
+    font-variant: normal
+    text-transform: none
+    line-height: 1
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+}
+
+.icon-ok:before {
+    content: "\e370"
+}
+
+body {
+    max-width: 1920px
+    width: 100%
+    height: 100%
+    font-family 'europa',"Helvetica Neue",Helvetica,Arial,sans-serif
+    font-weight: 300
+    color: rgb(21, 21, 21)
+    text-rendering: optimizeLegibility
+    background-color: white
+    margin-left: auto
+    margin-right: auto
+}
+
+html {
+    width: 100%
+    height: 100%
+    background: #FFFFFF
+    text-rendering: optimizeLegibility !important
+    -webkit-font-smoothing: antialiased !important
+    font-family 'europa',"Helvetica Neue",Helvetica,Arial,sans-serif
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 30px
+    font-weight: 100
+    letter-spacing: 1px
+    font-family 'europa',"Helvetica Neue",Helvetica,Arial,sans-serif
+}
+
+h2{
+    font-weight: 300
+    font-size: 2.5rem
+    margin: 0 0 0.8em 0
+}
+
+h3 {
+    font-size: 2.9em
+    font-weight: 500
+}
+
+p {
+    /* margin: 0 0 20px */
+    font-size: 1.7rem
+    line-height: 1.5
+}
+
+a {
+    color #219ab3
+    -webkit-transition all .2s ease-in-out
+    -moz-transition all .2s ease-in-out
+    transition all .2s ease-in-out
+    font-family 'europa',"Helvetica Neue",Helvetica,Arial,sans-serif
+}
+
+a:hover,
+a:focus {
+    text-decoration: none
+}
+
+/*BARRA DE NAVEGACION*/
+
+    .navbar {
+        padding: 20px 0
+        letter-spacing: 1px
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out
+        transition: background .5s ease-in-out,padding .5s ease-in-out
+        font-size: 1.9rem
+    }
+
+    nav a{
+        color: #fff;
+    }
+
+    nav a span{
+        font-size: 400;
+        font-family: amaranthregular;
+        font-size: 43px;
+    }
+
+    li.display-none{
+        display: none
+    }
+
+    nav ul li a:hover{
+        background-color: rgba(255,255,255,.2);
+        color: rgb(255, 213, 0);
+    }
+
+/*INDEX*/
+
+    /******HEADER******/
+    header.format /*reemplazar .format por intro servicios en el header*/{
+        display: table;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        color: #fff;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    .format .servicios-body {
+        display: table-cell;
+        background: url('http://idearte.camxim.com/img/bg-internas.png');
+    }
+
+    section.cd-intro.ancho{
+        width 100%
+    }
+
+    header p{
+        font-size: 6rem;
+    }
+
+    .arrow-portada{
+    text-align: center
+    width: 100%
+    max-width: 1920px
+    bottom: 40px
+    position: absolute
+    }
+
+    .btn-circle-portada {
+    padding: 7px 16px;
+    font-size: 40px;
+    color: #fff;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+    }
+
+    .barraflecha {
+    bottom: 0
+    position: absolute
+    width: 100%
+    max-width: 1920px
+    }
+
+        .barra-horizontal{
+    border-bottom: 30px solid white
+    width: 50%
+    display: inline-block
+    margin: 0px 0px
+    }
+
+    .barra-horizontal.left{
+        border-right: 30px solid transparent
+        float: left
+    }
+
+    .barra-horizontal.right{
+        border-left: 30px solid transparent
+        float: right
+    }
+
+    /******FIN HEADER******/
+
+    /*******SECION MENSAJE******/
+
+    .mensaje-section {
+    width: 100%;
+    height: auto;
+    padding: 60px 0 90px 0
+    background: white
+    background-position: center
+    -webkit-background-size: cover
+    -moz-background-size: cover
+    background-size: cover
+    -o-background-size: cover
+    }
+
+    .centrado {
+    margin-left: auto
+    margin-right: auto
+    float: none
+    }
+
+    h1.mensaje{
+        line-height: 1.4rem;
+        font-size: 2.4rem;
+        letter-spacing: normal;
+    }
+
+    .servicios-section {
+    padding: 43px 0;
+    background: #f3f3f3;
+    }
+
+    /****FIN SECCION MENSAJE*****/
+
+
+    /********SECCION SERVICIOS********/
+
+    h2.titulo-servicios {
+        font-size 4rem
+        color gray
+        margin-bottom 1.3em
+        text-align center
+    }
+
+    .servicios-section a{
+        color: #151515;
+    }
+
+    #ross img{
+    -webkit-transition: all .5s ease-in-out
+    transition: all .5s ease-in-out
+    }
+
+    #ross img:hover{
+        -webkit-transform: scale(1.1,1.1)
+        transform: scale(1.1,1.1)
+    }
+
+    .icono-home{
+    max-width: 170px;
+    margin-bottom: 30px;
+    }
+
+    h2.servicio-individual{
+        font-size: 2.5rem;
+        margin: 0 0 .8em 0;
+    }
+
+    .servicios-section p{
+        line-height: 30px
+    }
+
+    .section-otros{
+        -webkit-background-size: cover
+        -moz-background-size: cover
+        -o-background-size: cover
+        background-size: cover
+        padding: 5rem 0
+    }
+
+    .section-otros h3{
+        margin-bottom: 1.7rem
+        color: rgb(102, 102, 102)
+        font-size 2.3em !important
+    }
+
+    .section-otros h4{
+        height: 44px;
+        margin: 20px 0 15px 0;
+        font-size: 20px; 
+        color: rgb(21, 21, 21);
+    }
+
+    .section-otros p{
+        line-height: 1.4;
+        top: 33%;
+        text-align: justify;
+    }
+
+    /****FIN SECCION SERVICIOS*****/
+
+@media(max-width:1024px) and (min-width:601px) {
+
+    /*INDEX*/
+    
+    button{
+        display none
+    }
+
+    /************NAV************/
+    nav a{
+        color white
+    }
+    
+    nav a:hover{
+        color white
+    }
+    
+    nav a:focus{
+        color white
+    }
+    
+    .top-nav-collapse {
+        padding 0
+        background-color #fff
+        -webkit-box-shadow 0px 0px 10px 0px rgba(0,0,0,0.15)
+        -moz-box-shadow 0px 0px 10px 0px rgba(0,0,0,0.15)
+        box-shadow 0px 0px 10px 0px rgba(0,0,0,0.15)
+    }
+    
+    .top-nav-collapse a{
+        color #404B52
+        text-shadow none
+    }
+    
+    ul.dropdown-menu{
+        background rgba(36, 37, 40, 0.61)
+    }
+
+
+    /**********HEADER**********/
+
+    .navbar-custom {
+    padding: 20px 0
+    margin-bottom: 0
+    border-bottom: 1px solid rgba(255,255,255,0)
+    text-transform: none
+    font-family: 'europa',"Helvetica Neue",Helvetica,Arial,sans-serif
+    background-color: transparent
+    -webkit-transition: all .1s ease-in-out
+    -moz-transition: all .1s ease-in-out
+    transition: all .1s ease-in-out
+    }
+    
+    .navbar-custom .nav li a{
+        color white
+    }
+    
+    .navbar-custom .nav li a:hover{
+        color #fff200
+        background-color rgba(255,255,255,.2)
+        outline 0
+    }
+    
+    /*MENU FIJO*/
+    .navbar-fixed-top{
+        position absolute
+    }
+    
+    .arrow-portada{
+        display none
+    }
+    
+    a.page-scroll.active{
+        width 100%
+    }
+
+    .portada-index{
+        background url(http://idearte.camxim.com/img/portada-index-medium.png) center center
+        background-attachment fixed
+    }
+
+    .Header{
+        color white
+        padding 10px
+    }
+    
+    p.cd-headline.slide.frase-principal.parrafo{
+        font-size 4.2rem !important
+        line-height 7.5rem !important
+    }
+
+
+    /********MENSAJE*********/
+        
+    .forkit-curtain{
+        display: none
+    }    
+
+    .forkit{
+        display: none
+    }
+
+    .mensaje-section {
+    width: 100%
+    height: 250px
+    padding: 50px 0
+    font-size: 10rem
+    background: white
+    background-position: center
+    -webkit-background-size: cover
+    -moz-background-size: cover
+    background-size: cover
+    -o-background-size: cover
+    }
+
+    .mensaje-section p{
+        font-size: 2.4rem
+    }
+
+    .intro-contacto {
+        max-height: 100%
+    }
+
+    .intro-servicios {
+        display: table
+        width: 100%
+        height: 100%
+        padding: 0
+        text-align: left
+        color: #fff
+        -webkit-background-size: cover
+        -moz-background-size: cover
+        background-size: cover
+        -o-background-size: cover
+    }
+
+    .intro-servicios .servicios-body {
+        display: table-cell
+/*        vertical-align: middle
+        padding-top: 200px*/
+        background: url('http://idearte.camxim.com/img/bg-internas.png')
+    }
+
+    .intro-servicios .servicios-body .frase-principal {
+        margin: 0 0 4rem
+        font-weight: 400
+        letter-spacing: 1px
+        line-height: 6.5rem
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5)
+        font-size 6rem
+    }
+
+
+    .intro-blog{
+        height: 75%
+        padding: 0
+        display: table
+        width: 100%
+        -webkit-background-size: cover
+        background-size: cover
+    }
+
+    .color-nav-blog{
+        color: rgb(73, 73, 73)
+    }
+    
+    .navbar-custom .nav li a {
+    font-weight: 400
+    -webkit-transition: all .2s ease-in-out
+    -moz-transition: all .2s ease-in-out
+    transition: all .2s ease-in-out
+    font-size 24px
+    color white
+    }
+    
+    li.display-none{
+        display: none
+    }
+
+    /************SERVICIOS*********/
+    .servicios-section {
+    padding: 43px 0
+    background: white
+    }
+    
+    .servicios-section .titulo-h2{
+        font-size 3rem
+        color #1f1f1f
+        margin-bottom 1.2em
+        text-align center
+    }
+
+    .servicios-section a{
+    color: rgb(21, 21, 21)
+    }
+
+    .servicios-section h3{
+        margin-bottom: 30px
+    }
+
+    .servicios-section p{
+        line-height: 30px
+    }
+
+    .servicios-section ul{
+        font-size: 2rem
+        list-style-type: disc
+    }
+
+    /********PORTAFOLIO Y BLOG*********/
+
+    #otros{
+        text-align left
+        }
+
+    .section-otros h3{
+        margin-bottom 3.7rem
+        color rgb(102, 102, 102)
+        font-size 2.3em !important
+        text-align center
+    }
+    
+    #otros img{
+        width 50%
+        margin-bottom 8%
+    }
+    
+    #otros h4{
+        color rgb(21, 21, 21)
+        position absolute
+        left 53%    
+        top 18%
+        margin 0 !important
+    }
+    
+    #otros p{
+        line-height 1.4
+        position absolute
+        top 40%
+        left 53%
+    }
+    
+    h4{
+        font-size 23px !important
+    }
+
+    p.text-centrado{
+        line-height 1.4
+        margin 0 auto
+        width 70%
+    }
+    .section-otros a{
+        color: rgb(102, 102, 102)
+    }
+
+    .section-otros a:hover{
+        color: rgb(102, 102, 102)
+    }
+
+    .section-otros{
+        background: white
+        -webkit-background-size: cover
+        -moz-background-size: cover
+        -o-background-size: cover
+        background-size: cover
+        height: 600px
+        padding: 5rem 0
+    }
+
+    .u-verticalCenter {
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+    display: table
+    width: 100%
+    }
+
+    .u-verticalContent {
+    display: table-cell
+    vertical-align: middle
+    }
+    
+    .twitter-frame{
+        display: none
+    }
+    
+    a.btn.btn-circle-portada.page-scroll{
+        display none
+    }
+    
+    /*********ACERCA********/
+
+    /*********FINN ACERCA********/
+
+    /************EQUIPO***************/
+        
+    .portada-equipo{
+        background: url(http://idearte.camxim.com/img/equipo/portada-equipo.jpg) no-repeat center center scroll
+        background-attachment: fixed
+        background-color: white
+    }
+    
+    /************EQUIPO***************/
+
+
+    /************CONTACTO***************/
+    
+    .portada-contacto{
+        background: url(http://idearte.camxim.com/img/contacto/portada-contacto.jpg) no-repeat bottom center scroll
+        background-color: white
+    }
+    
+    .intro-contacto .servicios-body {
+        display: table-cell
+/*        vertical-align: middle
+        padding-top: 200px*/
+        background: url('http://idearte.camxim.com/img/bg-internas.png')
+    }
+
+    .intro-contacto {
+    display: table
+    width: 100%
+    min-height: 60%
+    text-align: left
+    color: #fff
+    -webkit-background-size: cover
+    -moz-background-size: cover
+    background-size: cover
+    -o-background-size: cover
+    }
+    
+    /************CONTACTO***************/
+      
+
+
+    /************DISEÑO WEB***************/
+        
+    .container-fluid.disenoweb.section-fondo{
+    text-align center
+    }    
+    
+    .container-fluid.disenoweb.section-fondo.text-center{
+        text-align center
+    }
+
+
+    /**********FIN **********/  
+        
+
+    /************MARKETING DIGITAL***************/
+        
+    
+    .col-lg-12.marketing.u-verticalCenter.text-center{
+        text-align center
+    }
+    
+    .col-md-5.text-center{
+        text-align center !important
+    }
+    
+    .col-md-12.col-lg-7.text-center.marg-bottom{
+        marg-bottom 5rem
+    }
+
+    /**********FIN MARKETING DIGITAL**********/           
+
+
+    /**********FOOTER**********/
+    .logo-footer{
+        display block
+        font-family 'amaranthregular' 
+        font-size 33px 
+        margin-bottom 1.5rem
+        margin-top 1.9rem
+        width auto 
+    }
+
+    .logo-footer:hover{
+        color #454242
+    }
+
+
+    .logo-footer-p{
+        font-size 2.2rem
+        margin-top 3.5rem
+        margin-bottom 2.5rem
+        color #454242
+        letter-spacing 1px
+        /*margin-left:27px*/
+    }
+
+    footer {
+        color #454242
+        background #fff200
+        padding 25px 0
+    }
+
+    .subfooter {
+        height auto
+        padding 0px
+        text-align center
+    }
+
+    .subfooter-bottom {
+        background #fff200
+        height auto
+        padding 5px 0
+        }
+
+    footer p {
+        margin 0
+        font-size 1.59rem
+        font-weight 400
+        line-height 23px
+        color #454242
+        // margin-left 27px
+    }
+
+    footer u {
+        font-size 1.59rem
+        font-weight 400
+        color #454242
+        margin-left 27px
+    }
+
+    footer a {
+        color #454242
+        font-size 1.4rem
+        font-weight 400
+        margin 0
+    }
+
+    footer a:hover {
+        color white
+    }
+}
+
+
+@media(max-width:600px) {/*IPHONE 6 PLUS*/
+    
+    // header a{
+    //     display none
+    // }
+
+    button{
+        display none
+    }
+
+    .is-active{
+        display block
+    }
+    
+    ul.nav.navbar-nav{
+        margin 0 -15px
+        height 327px
+    }
+
+    li.display-none{
+        padding 20px 0
+    }
+    
+    li.display-none.alto-li{
+        padding 6px 0
+        display block
+    }
+
+
+    /************NAV************/
+    nav a{
+        color white
+    }
+    
+    nav a:hover{
+        color white
+    }
+    
+    nav a:focus{
+        color white
+    }
+    
+    nav li a:hover{
+        background #fff200 !important
+        color black !important
+    }
+    
+    .navbar-nav{
+        background black
+    }
+    
+
+    /**********HEADER**********/
+
+    .navbar-custom {
+    padding 20px 0
+    margin-bottom 0
+    border-bottom 1px solid rgba(255,255,255,0)
+    text-transform none
+    background-color transparent
+    -webkit-transition all .1s ease-in-out
+    -moz-transition all .1s ease-in-out
+    transition all .1s ease-in-out
+    }
+
+    /*MENU FIJO*/
+    .navbar-fixed-top{
+        position absolute
+    }
+    
+    .arrow-portada{
+        display none
+    }
+
+    button.menu{
+        background transparent
+    }
+
+    span.icon-bar{
+        background white
+    }
+
+    a.page-scroll.active{
+        width 100%
+    }
+
+    li.dropdown.displaynone{
+        display none
+    }
+    
+    span.cd-words-wrapper{
+        text-align center!important
+    }
+    
+    .Header{
+        color white
+        padding 10px
+    }
+
+    .Header .btn-menu{
+        clear: both
+        font-size: 23px
+        text-transform: uppercase
+        color: white
+        position: absolute
+        z-index: 99999
+        top: 68px
+        left: 15px
+        font-weight: 900
+        background: transparent
+    }
+
+    .Header .btn-close{
+        clear: both
+        font-size: 35px
+        color: white
+        position: absolute
+        z-index: 99999
+        top: 10px
+        right: 10px
+        display: block
+        cursor: pointer
+        background: transparent
+    }
+
+    .menu{
+        display: table !important
+        opacity: 1
+        -webkit-transition: 1s
+    }
+    
+    .Header #nav{
+        background: #FFF200
+        padding: 0
+        height: 100%
+        display: none
+        overflow: hidden
+        position: fixed
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        width: 100%
+        z-index: 99999
+        float: none
+        margin: 0
+        }
+
+    .MainMenu{
+        display: table-cell
+        vertical-align: middle
+        margin: 0
+        padding: 0
+        list-style: none
+    }
+
+    .MainMenu-item{
+        text-align: center
+        height: 65px
+        line-height: 65px
+        transition: 1s
+        float: none
+        width: 100%
+    }
+
+    .MainMenu-link{
+        display: block
+        font-size: 28px
+        height: auto
+        margin: 0
+        padding: 0
+        text-decoration: none
+        text-shadow: none
+        text-transform: uppercase
+        color: #454242 !important
+    }
+    
+    /****************INDEX**************/
+
+    .portada-index{
+        background: url("http://idearte.camxim.com/img/portada-index-smal.png") center center
+        background-attachment: fixed
+    }
+    
+    /********MENSAJE*********/
+
+    .forkit-curtain{
+        display: none
+    }    
+
+    .forkit{
+        display: none
+    }
+
+    .mensaje-section {
+        padding: 40px 0
+        font-size: 10rem
+        background-position: center
+        -webkit-background-size: cover
+        -moz-background-size: cover
+        background-size: cover
+        -o-background-size: cover
+    }
+
+    .mensaje-section p{
+        font-size: 2.4rem
+    }
+
+    .intro-contacto {
+        max-height: 100%
+    }
+
+    .intro-servicios {
+        display: table
+        width: 100%
+        height: 100%
+        padding: 0
+        text-align: left
+        color: #fff
+    }
+
+    .intro-servicios .servicios-body {
+        display: table-cell
+/*        vertical-align: middle
+        // padding-top: 200px*/
+        background: url('http://idearte.camxim.com/img/bg-internas.png')
+    }
+
+    .intro-servicios .servicios-body .frase-principal {
+        margin: 0 0 4rem
+        font-weight: 400
+        letter-spacing: 1px
+        line-height: 5.5rem
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5)
+        font-size 4.5rem  !important
+    }
+
+    .intro-blog{
+        height: 75%
+        padding: 0
+        display: table
+        width: 100%
+        -webkit-background-size: cover
+        background-size: cover
+    }
+
+    .color-nav-blog{
+        color: rgb(73, 73, 73)
+    }
+
+
+
+    /********SERVICIOS*********/
+    .servicios-section {
+    padding-top 43px
+    background white
+    }
+
+    .servicios-section .titulo-h2{
+        font-size 3rem
+        color #1f1f1f
+        margin-bottom 1.2em
+        text-align center
+    }/* DESKTOP Y TABLE = style="font-size:4rem; color:gray; margin-bottom:1.2em;"*/
+
+    section h2 span{
+        display block
+    }
+
+    .servicios-section a{
+    color: rgb(21, 21, 21)
+    }
+
+    .servicios-section h3{
+        margin-bottom: 30px
+    }
+
+    .servicios-section p{
+        line-height: 30px
+    }
+
+    .servicios-section ul{
+        font-size: 2rem
+        list-style-type: disc
+    }
+
+    #ross img{
+        transition 0
+    }
+
+    #ross img:hover{
+        transition 0
+        transform inherit
+    }
+
+    #ross p{
+        margin-bottom: 40px
+    }
+
+
+
+    /********PORTAFOLIO Y BLOG*********/
+
+    #otros{
+        text-align: center
+    }
+
+    .section-otros p{
+    margin-bottom: 36px
+    line-height: 1.4
+    }
+
+    .section-otros h3{
+        margin-bottom: 1.7rem
+        color: rgb(102, 102, 102)
+        font-size: 1.8em
+    }
+
+    .section-otros h4{
+        height: auto !important
+        margin: 20px 0 26px 0
+        font-size: 20px
+    
+        color: rgb(21, 21, 21)
+    }
+
+    .section-otros a{
+        color: rgb(102, 102, 102)
+    }
+
+    .section-otros a:hover{
+        color: rgb(102, 102, 102)
+    }
+
+    .section-otros{
+        background: white
+          -webkit-background-size: cover
+          -moz-background-size: cover
+          -o-background-size: cover
+          background-size: cover
+          height: 600px
+          padding: 5rem 0
+    }
+
+    .u-verticalCenter {
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+    display: table
+    width: 100%
+    }
+
+    .u-verticalContent {
+    display: table-cell
+    vertical-align: middle
+    }
+
+    .twitter-frame{
+        display: none
+    }
+    
+    
+    /***************FIN INDEX***************/
+        
+    a.btn.btn-circle-portada.page-scroll{
+        display none
+    }
+    
+    .col-lg-12.centrado.text-center{
+        margin-left 34px
+    }
+    /************ACERCA***************/
+
+    /*********FINN ACERCA********/
+        
+    /************EQUIPO***************/
+        
+    .portada-equipo{
+        background: url(http://idearte.camxim.com/img/equipo/portada-equipo.jpg) no-repeat center center scroll
+        background-attachment: fixed
+        background-color: white
+    }
+    
+    /************EQUIPO***************/
+        
+
+
+    /************CONTACTO***************/
+    
+    .portada-contacto{
+        background: url(http://idearte.camxim.com/img/contacto/portada-contacto.jpg) no-repeat bottom center scroll
+        background-color: white
+    }
+    
+    .intro-contacto .servicios-body {
+        display: table-cell
+/*        vertical-align: middle
+        padding-top: 200px*/
+        background: url('http://idearte.camxim.com/img/bg-internas.png')
+    }
+
+    .intro-contacto {
+    display: table
+    width: 100%
+    min-height: 60%
+    text-align: left
+    color: #fff
+    -webkit-background-size: cover
+    -moz-background-size: cover
+    background-size: cover
+    -o-background-size: cover
+    }
+    
+    /************CONTACTO***************/
+        
+    /*DISEÑO WEB*/
+    .intro-servicios .servicios-body .servicios-heading{
+        font-size 6rem
+        text-transform capitalize
+        font-family 'europa'm sans-serif
+        font-weight 900
+        text-shadow 0px 0px 10px rgba(0, 0, 0, 0.5)
+    }
+    
+    .container-fluid.disenoweb.section-fondo.text-center{
+    text-align center
+    }
+    
+    .disenoweb h2{
+    font-size: 4rem
+    font-weight: 400
+    margin: 4rem 0
+    }
+    
+    .col-md-7.text-center{
+        margin 5rem 0
+    }
+    
+    .container-fluid.disenoweb.section-fondo.text-center{
+        margin-top 0 !important
+    }
+    
+    .container-fluid.disenoweb.section-fondo.text-center{
+        padding-top 2.1rem
+    }
+
+    /*FIN DISEÑO WEB*/
+        
+    .action-button
+    {
+        position: relative
+        padding: 7px 40px 8px 40px
+        margin: 0 0 0 8px
+        border-radius: 4px
+        font-family: "europa","Helvetica Neue",Helvetica,Arial,sans-serif
+        font-size: 2.2rem
+        font-weight: 900
+        color: #FFF
+        text-decoration: none  
+    }
+
+    .yellow {
+        background-color: #fff200
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2)
+    }
+
+    .yellow:hover
+    {
+        background-color: #ffde00
+    /*    border-bottom: 4px solid #E1AE00
+    */    color: white
+    }
+
+
+    /*********FOOTER*********/
+    .logo-footer{
+        display block
+        font-family 'amaranthregular' 
+        font-size 33px 
+        margin-bottom 1.5rem
+        margin-top 1.9rem
+        width auto 
+    }
+
+    .logo-footer:hover{
+        color #454242
+    }
+
+    .logo-footer-p{
+        font-size 2.2rem
+        margin-top 3.5rem
+        margin-bottom 2.5rem
+        color #454242
+        letter-spacing 1px
+    }
+
+    footer {
+    color #454242
+    background #fff200
+    padding 25px 0
+    }
+
+    .subfooter {
+        height auto
+        padding 0px
+        text-align center
+    }
+
+    .subfooter-bottom {
+        background #fff200
+        height auto
+        padding 5px 0
+        }
+        
+    footer a{
+        color #454242
+    }
+
+    footer p {
+        margin 0
+        font-size 1.59rem
+        font-weight 400
+        line-height 23px
+        color #454242
+    }
+
+    footer u {
+        font-size 1.59rem
+        font-weight 400
+        color #454242
+    }
+
+    footer a:hover {
+        color white
+    }
+    
+
+} 
+    /*FIN INDEX IPHONE 6 PLUS*/
+
+
+/* Estilos del formulario */
+form.contacto {
+    margin: 0 auto 0
+    width: 440px
+}
+form.contacto fieldset {
+
+}
+form.contacto fieldset > div {
+    margin-bottom: 12px
+    overflow: hidden
+}
+form.contacto fieldset div label {
+    display: block
+    float: left
+    margin-right: 15px
+    margin-top: 5px
+    text-align: right
+    text-transform: uppercase
+    width: 84px
+}
+form.contacto input[type="text"], form.contacto textarea {
+    background: rgba(255, 255, 255, 0)
+    border: 1px solid #fff200
+    border-radius: 4px
+    color: white
+    display: block
+    float: left
+    padding: 8px
+    resize: none
+    width: 100%
+    -webkit-transition: all 0.1s linear
+    -moz-transition: all 0.1s linear
+}
+form.contacto input[type="text"]:focus, form.contacto textarea:focus {
+    background: rgba(0, 0, 0, 0.1)
+    border: 1px solid #fff200
+    color: #ffd500
+    outline: none
+}
+form.contacto .ultimo{
+    margin-bottom: 0
+    position: relative
+}
+form.contacto button {
+    background: rgba(255, 255, 255, 0)
+    border: 1px solid #fff200
+    color: white
+    float: right
+    font-size: 1.7rem
+    border-radius: 4px
+    font-family: "europa","Helvetica"
+    height: 32px
+    font-weight: 900
+    padding: 6px 40px 28px 40px
+    position: relative
+    -webkit-transition: all 0.2s linear
+    -moz-transition: all 0.2s linear
+}
+form.contacto button:hover{
+    background: #FFE000
+}
+
+/**************PORTADAS*************/
+
+
+.portada-acerca{
+        background: url(http://idearte.camxim.com/img/acerca/portada-acerca.jpg)
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed
+        background-size cover
+    }
+
+@media only screen and (max-width: 767px) {
+        /************ACERCA***************/   
+
+    .portada-acerca{
+        background-image url(http://idearte.camxim.com/img/acerca/portada-acerca-movil.png)
+    }
+    
+    /************ACERCA***************/
+}
+
+/**************FIN PORTADAS*************/
