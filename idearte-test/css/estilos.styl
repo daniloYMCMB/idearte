@@ -94,7 +94,7 @@ p {
 }
 
 a {
-    color #219ab3
+    color white
     -webkit-transition all .2s ease-in-out
     -moz-transition all .2s ease-in-out
     transition all .2s ease-in-out
@@ -107,6 +107,18 @@ a:focus {
 }
 
 /*BARRA DE NAVEGACION*/
+
+    .navbar-custom {
+    padding: 20px 0
+    margin-bottom: 0
+    border-bottom: 1px solid rgba(255,255,255,0)
+    text-transform: none
+    font-family: 'europa',"Helvetica Neue",Helvetica,Arial,sans-serif
+    background-color: transparent
+    -webkit-transition: all .5s ease-in-out
+    -moz-transition: all .5s ease-in-out
+    transition: all .5s ease-in-out
+    }
 
     .navbar {
         padding: 20px 0
@@ -141,6 +153,53 @@ a:focus {
         border-bottom: 1px solid rgba(255,255,255,.3)
     }
 
+    .navbar-custom {
+    padding: 20px 0
+    margin-bottom: 0
+    border-bottom: 1px solid rgba(255,255,255,0)
+    text-transform: none
+    font-family: 'europa',"Helvetica Neue",Helvetica,Arial,sans-serif
+    background-color: transparent
+    -webkit-transition: all .5s ease-in-out
+    -moz-transition: all .5s ease-in-out
+    transition: all .5s ease-in-out
+    }
+
+    .navbar-custom .navbar-brand {
+        font-weight: 700
+    }
+
+    .navbar-custom .navbar-brand:focus {
+        outline: 0
+    }
+
+    .navbar-custom .navbar-brand .navbar-toggle {
+        padding: 4px 6px
+        font-size: 16px
+        color: #fff
+    }
+
+    .navbar-custom .navbar-brand .navbar-toggle:focus,
+    .navbar-custom .navbar-brand .navbar-toggle:active {
+        outline: 0
+    }
+
+    .navbar-custom .nav li.active {
+        outline: none
+        background-color: rgba(255,255,255,.3)
+    }
+
+    .navbar-custom .nav li a:hover,
+    .navbar-custom .nav li a:focus,
+    .navbar-custom .nav li a.active {
+        outline: 0
+        background-color: rgba(255,255,255,.2)
+    }
+
+    .navbar-custom .nav li a:hover{
+        color #fff200
+    }
+
     nav a{
         color: #fff;
     }
@@ -155,9 +214,28 @@ a:focus {
         display: none
     }
 
-    nav ul li a:hover{
-        background-color: rgba(255,255,255,.2);
-        color: rgb(255, 213, 0);
+    .navbar-nav li a:hover,
+    .navbar-custom .nav li a:focus,
+    .navbar-custom .nav li a.active{
+        background-color rgba(255,255,255,.2)
+        color #fff200
+        outline 0
+    }
+    
+    .arrow-up-servicios {
+        width: 0 
+        height: 0 
+        border-left: 5px solid transparent
+        border-right: 5px solid transparent
+        border-bottom: 5px solid black
+        margin-left: 54px
+        background: none
+        margin-top: -11px
+        margin-bottom: 6px
+    }
+    
+    .dropdown-menu>li:hover {
+        background: black
     }
 
     /**FIN NAV**/
@@ -626,17 +704,17 @@ a:focus {
 
 
 
-
+    /*H1 ACERCA - EQUIPO - CONTACTO*/
+    .format h1{
+    margin: 0 0 4rem;
+    font-size: 6rem;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
 
 /***********ACERCA**********/
 
     /******HEADER******/
 
-    h1.frase-principal{
-    margin: 0 0 4rem;
-    font-size: 6rem;
-    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    }
 
     /******FIN HEADER******/
 
@@ -653,27 +731,122 @@ a:focus {
     min-height: 500px
     }
 
-    .acerca-contenido h2{
+    .acerca-proceso h2{
         text-align: left;
         font-weight: bold;
         font-size: 2.5em;
         margin: 0 0 .8em 0;
     }
 
-    .acerca-contenido h3{
+    .acerca-proceso h3{
         font-size: 1.8em;
         margin-bottom: .3rem;
+        text-align: left;
     }
 
-    .acerca-contenido p{
+    .acerca-proceso p{
         margin-bottom: 2.5rem;
         line-height: 3rem;
         font-size: 1.7rem;
     }
 
-
-
 /***********FIN ACERCA**********/
+
+/*********EQUIPO RESPONSIVE*****/
+     
+    .equipo{
+        text-align: center
+        background: white
+        padding: 0 0
+    }
+
+    .equipo-perfil{
+        padding-top: 7rem
+        margin-bottom: 70px
+    }
+
+    .fotoperfil{
+        margin-bottom: 2rem
+        text-align: center
+        margin: 0 2.0rem
+        padding: 0 2.5em
+    }
+
+    .fotoperfil h4 {
+    font-size: 2.4rem
+    color: black
+    padding: 4px 0
+    margin-bottom: 0
+    border-radius: 30px
+    width: 100%
+    margin: 0 auto
+    font-weight: 100
+    }
+
+    .fotoperfil img {
+        width: 100%
+        border-radius: 50%
+        margin-bottom: 1rem
+        -webkit-transition: all 1s ease-out  /* Chrome y Safari */
+        -o-transition: all 1s ease-out  /* Opera */
+        -moz-transition: all 1s ease-out  /* Mozilla Firefox */
+        -ms-transition: all 1s ease-out   /* Internet Explorer */
+        transition: all 1s ease-out  /* W3C */
+    }
+
+
+    .fotoperfil img:hover {
+        -webkit-transform: translate3d(0,0,0)
+        transition:all 1s ease-out
+    }
+
+ /*********FIN EQUIPO RESPONSIVE*****/
+
+
+ /*********CONTACTO*****/
+
+.contacto p{
+    margin: 0 0 0px
+}
+
+.contacto a{
+    color: #454242
+}
+
+.contacto a:hover{
+    color: #FFDF3E
+}
+
+p.contacto-info{
+    margin-top: 1rem
+    font-size: 1.6rem
+    font-weight: 600
+}
+
+h3.contacto-info{
+    margin:2.5rem 0 20px 0
+    font-size: 2.5rem
+    font-weight: bold 
+    color: rgb(69, 66, 66)
+}
+
+.contacto h4{
+    font-size: 2rem
+    text-transform: none
+}
+
+.titulocontacto {
+margin: 3rem
+width: 100%
+max-width: 1000px
+line-height: 44px
+font-size:35px
+margin-left: auto
+margin-right: auto
+margin-bottom: 60px
+}
+
+ /*********FIN CONTACTO*****/
 
 
 /***********SERVICIOS**********/
@@ -691,7 +864,7 @@ a:focus {
         font-size: 1.9rem;
     }
 
-    header h1{
+    .servicios h1{
         font-size 8rem
         text-transform capitalize
         font-weight 900
@@ -790,12 +963,6 @@ a:focus {
 
     /******HEADER******/
 
-    header h1{
-        font-size 8rem
-        text-transform capitalize
-        font-weight 900
-        text-shadow 0px 0px 10px rgba(0, 0, 0, 0.5)
-    }
 
     /******FIN HEADER******/
 
@@ -818,101 +985,6 @@ a:focus {
 /********FIN IMAGEN CORPORATIVA******/
 
 
- /*********EQUIPO RESPONSIVE*****/
-     
-    .equipo{
-        text-align: center
-        background: white
-        padding: 0 0
-    }
-
-    .equipo-perfil{
-        padding-top: 7rem
-        margin-bottom: 70px
-    }
-
-    .fotoperfil{
-        margin-bottom: 2rem
-        text-align: center
-        margin: 0 2.0rem
-        padding: 0 2.5em
-    }
-
-    .fotoperfil h4 {
-    font-size: 2.4rem
-    color: black
-    padding: 4px 0
-    margin-bottom: 0
-    border-radius: 30px
-    width: 100%
-    margin: 0 auto
-    font-weight: 100
-    }
-
-    .fotoperfil img {
-        width: 100%
-        border-radius: 50%
-        margin-bottom: 1rem
-        -webkit-transition: all 1s ease-out  /* Chrome y Safari */
-        -o-transition: all 1s ease-out  /* Opera */
-        -moz-transition: all 1s ease-out  /* Mozilla Firefox */
-        -ms-transition: all 1s ease-out   /* Internet Explorer */
-        transition: all 1s ease-out  /* W3C */
-    }
-
-
-    .fotoperfil img:hover {
-        -webkit-transform: translate3d(0,0,0)
-        transition:all 1s ease-out
-    }
-
- /*********FIN EQUIPO RESPONSIVE*****/
-
-
- /*********CONTACTO*****/
-
-.contacto p{
-    margin: 0 0 0px
-}
-
-.contacto a{
-    color: #454242
-}
-
-.contacto a:hover{
-    color: #FFDF3E
-}
-
-p.contacto-info{
-    margin-top: 1rem
-    font-size: 1.6rem
-    font-weight: 600
-}
-
-h3.contacto-info{
-    margin:2.5rem 0 20px 0
-    font-size: 2.5rem
-    font-weight: bold 
-    color: rgb(69, 66, 66)
-}
-
-.contacto h4{
-    font-size: 2rem
-    text-transform: none
-}
-
-.titulocontacto {
-margin: 3rem
-width: 100%
-max-width: 1000px
-line-height: 44px
-font-size:35px
-margin-left: auto
-margin-right: auto
-margin-bottom: 60px
-}
-
- /*********FIN CONTACTO*****/
      
      /**********FOOTER**********/
     .logo-footer{
@@ -975,7 +1047,6 @@ margin-bottom: 60px
         color: #454242
         font-size: 1.4rem
         font-weight: 400
-        font-weight: 600
         margin: 0
     }
 
