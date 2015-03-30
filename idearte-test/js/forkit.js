@@ -5,6 +5,7 @@
  *
  * Created by Hakim El Hattab, http://hakim.se
  */
+
 (function(){
 
 	var STATE_CLOSED = 0,

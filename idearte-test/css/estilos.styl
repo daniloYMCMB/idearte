@@ -12,34 +12,33 @@
     font-style: normal
 }
 
-
 @font-face {
-    font-family: 'icomoon'
-    src:url('http://idearteinc.com/css/fonts/icomoon.eot?-rgvwq5')
-    src:url('http://idearteinc.com/css/fonts/icomoon.eot?#iefix-rgvwq5') format('embedded-opentype'),
-        url('http://idearteinc.com/css/fonts/icomoon.woff?-rgvwq5') format('woff'),
-        url('http://idearteinc.com/css/fonts/icomoon.ttf?-rgvwq5') format('truetype'),
-        url('http://idearteinc.com/css/fonts/icomoon.svg?-rgvwq5#icomoon') format('svg')
-    font-weight: normal
-    font-style: normal
+    font-family: 'icomoon';
+    src:url('fonts/icomoon.eot?o3sfnu');
+    src:url('fonts/icomoon.eot?#iefixo3sfnu') format('embedded-opentype'),
+        url('fonts/icomoon.woff?o3sfnu') format('woff'),
+        url('fonts/icomoon.ttf?o3sfnu') format('truetype'),
+        url('fonts/icomoon.svg?o3sfnu#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 [class^="icon-"], [class*=" icon-"] {
-    font-family: 'icomoon'
-    speak: none
-    font-style: normal
-    font-weight: normal
-    font-variant: normal
-    text-transform: none
-    line-height: 1
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
 
     /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased
-    -moz-osx-font-smoothing: grayscale
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-ok:before {
-    content: "\e370"
+.icon-checkmark:before {
+    content: "\ea10";
 }
 
 body {
@@ -94,7 +93,7 @@ p {
 }
 
 a {
-    color #219ab3
+    color white
     -webkit-transition all .2s ease-in-out
     -moz-transition all .2s ease-in-out
     transition all .2s ease-in-out
@@ -106,7 +105,22 @@ a:focus {
     text-decoration: none
 }
 
+.color-idearte{
+    color #808080
+}
+
+
 /*BARRA DE NAVEGACION*/
+
+    .navbar-custom {
+    padding: 20px 0
+    margin-bottom: 0
+    text-transform: none
+    font-family: 'europa',"Helvetica Neue",Helvetica,Arial,sans-serif
+    -webkit-transition: all .1s ease-in-out
+    -moz-transition: all .1s ease-in-out
+    transition: all .1s ease-in-out
+    }
 
     .navbar {
         padding: 20px 0
@@ -130,6 +144,10 @@ a:focus {
         text-shadow none
     }
     
+    ul.dropdown-menu{
+        background rgba(36, 37, 40, 0.61)
+    }
+    
     nav.navbar.navbar-custom.navbar-fixed-top.top-nav-collapse{
         padding 0
         background white 
@@ -140,13 +158,57 @@ a:focus {
     .navbar-custom.top-nav-collapse {
         border-bottom: 1px solid rgba(255,255,255,.3)
     }
+    
+    .navbar-custom .navbar-brand {
+    font-weight: 700
+    }
+
+    .navbar-custom .navbar-brand:focus {
+        outline: 0
+    }
+
+    .navbar-custom .navbar-brand .navbar-toggle {
+        padding: 4px 6px
+        font-size: 16px
+        color: #fff
+    }
+
+    .navbar-custom .navbar-brand .navbar-toggle:focus,
+    .navbar-custom .navbar-brand .navbar-toggle:active {
+        outline: 0
+    }
+
+    .navbar-custom .nav li.active {
+        outline: none
+        background-color: rgba(255,255,255,.3)
+    }
+
+    // .navbar-custom .nav li a:focus,
+    // .navbar-custom .nav li a.active {
+ 
+    // }
+        
+    .navbar-custom .nav li a {
+    font-weight: 400
+    -webkit-transition: all .2s ease-in-out
+    -moz-transition: all .2s ease-in-out
+    transition: all .2s ease-in-out
+    letter-spacing 1px
+    }
+
+    .navbar-custom .nav li a:hover,
+    .navbar-custom .nav li a:focus,
+    .navbar-custom .nav li a.active {
+        color #fff200
+        outline: 0
+        background-color: rgba(255,255,255,.2)
+    }
 
     nav a{
         color: #fff;
     }
 
     nav a span{
-        font-size: 400;
         font-family: amaranthregular;
         font-size: 43px;
     }
@@ -155,9 +217,107 @@ a:focus {
         display: none
     }
 
+
     nav ul li a:hover{
         background-color: rgba(255,255,255,.2) !important;
         color: rgb(255, 213, 0);
+    }
+    
+    .nav .open>a, .nav .open>a:hover, .nav .open>a:focus{
+        background-color transparent
+        color #fff200
+    }
+
+    .navbar-nav li a:hover,
+    .navbar-custom .nav li a:focus,
+    .navbar-custom .nav li a.active{
+        background-color transparent !important
+        color #fff200
+        outline 0
+    }
+    
+    .nav>li>a:hover,
+    .nav>li>a:focus{
+        background-color transparent
+    }
+    
+    /*dropdown*/
+    
+    ul.nav li.dropdown:hover > ul.dropdown-menu{ 
+        display: block; 
+    }
+
+    .navbar-right .dropdown-menu {
+    right auto
+    left auto
+    }
+
+    .navbar-nav>li>.dropdown-menu {
+    background: rgba(36, 37, 40, 0.61)
+    }
+
+    .dropdown-menu>li>a {
+    color: #FFFCFC
+    }
+
+    .dropdown-menu>li:hover>a{
+        color: rgb(245, 205, 1)
+    }
+
+
+    .dropdown-menu>li:hover {
+    background: black
+    }
+    
+    .arrow-up-servicios {
+        width: 0 
+        height: 0 
+        border-left: 5px solid transparent
+        border-right: 5px solid transparent
+        border-bottom: 5px solid black
+        margin-left: 54px
+        background: none
+        margin-top: -11px
+        margin-bottom: 6px
+    }
+        
+    .arrow-up {
+        width: 0 
+        height: 0 
+        border-left: 5px solid transparent
+        border-right: 5px solid transparent
+        border-bottom: 5px solid black
+    }
+
+    .arrow-down {
+        width: 0 
+        height: 0 
+        border-left: 20px solid transparent
+        border-right: 20px solid transparent
+        
+        border-top: 20px solid #f00
+    }
+
+    .arrow-right {
+        width: 0 
+        height: 0 
+        border-top: 60px solid transparent
+        border-bottom: 60px solid transparent
+        
+        border-left: 60px solid green
+    }
+
+    .arrow-left {
+        width: 0 
+        height: 0 
+        border-top: 10px solid transparent
+        border-bottom: 10px solid transparent 
+        
+        border-right:10px solid blue 
+    }
+    
+    .dropdown-menu>li:hover {
+        background: black
     }
 
     /**FIN NAV**/
@@ -249,12 +409,12 @@ a:focus {
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2)
     }
 
-    .yellow:hover
-    {
-        background-color: #ffde00;
-        /*border-bottom: 4px solid #E1AE00
-        color: white*/
-    }
+    // .yellow:hover
+    // {
+    //     background-color: #ffde00;
+    //     /*border-bottom: 4px solid #E1AE00
+    //     color: white*/
+    // }
 
     /***FIN HEADER***/
 
@@ -457,7 +617,6 @@ a:focus {
         font-size: 1.59rem
         font-weight: 400
         color: #454242
-        margin-left: 27px
     }
     
 
@@ -626,27 +785,31 @@ a:focus {
 
 
 
-
-
-/***********ACERCA**********/
-
-    /******HEADER******/
-
-    h1.frase-principal{
+    /*H1 ACERCA - EQUIPO - CONTACTO*/
+    .format h1{
     margin: 0 0 4rem;
     font-size: 6rem;
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     }
 
+/***********ACERCA**********/
+
+    /******HEADER******/
+
+
     /******FIN HEADER******/
 
     /***CONTENIDO ACERCA****/ /*camibar clase mensaje-servicios por .container.acerca-contenido*/
     .mensaje-acerca{
-        margin 5% auto
+        padding 5% 0
     }
 
     .acerca-proceso-imagen img{
         width: 400px;
+    }
+
+    .acerca-proceso{
+    min-height: 500px
     }
 
     .acerca-proceso h2{
@@ -659,6 +822,7 @@ a:focus {
     .acerca-proceso h3{
         font-size: 1.8em;
         margin-bottom: .3rem;
+        text-align: left;
     }
 
     .acerca-proceso p{
@@ -667,146 +831,9 @@ a:focus {
         font-size: 1.7rem;
     }
 
-
-
 /***********FIN ACERCA**********/
 
-
-/***********SERVICIOS**********/
-
-
-    /******HEADER******/
-        
-    h1.servicios{
-        font-size 8rem
-        text-transform capitalize
-        font-weight 900
-        text-shadow 0px 0px 10px rgba(0, 0, 0, 0.5)
-    }
-
-
-    h2.contenido-servicios {
-        font-size: 4rem;
-        font-weight: 400;
-        margin: 2rem 0;
-    }
-
-    p.contenido-servicios {
-        font-size: 1.9rem;
-        line-height 30px
-    }
-
-    /******FIN HEADER******/
-
-
-    /*DISEÑOWEB*/
-
-
-    /***CONTENIDO****/ /*camibar clase mensaje-servicios por .container.acerca-contenido*/
-
-    .logos-lenguajes-section {
-    padding: 0px 20px 0 0;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    margin-top: 5rem;
-    }
-
-    div.contenido-servicios{
-        border: 0;
-        margin: 50px auto;
-        padding: 0;
-    }
-
-    .disenoweb{
-    margin: 50px auto;
-    }
-
-
-    /*FIN DISEÑOWEB*/
-
-    
-    /*MARKETING DIGITAL*/
-
-    /***CONTENIDO****/ 
-
-    /*borrar clases del section dejarlo con su style "no sirven las clases"*/
-
-    .servicios-section {
-    padding: 43px 0;
-    background: white;
-    }
-
-    section.contenido-servicios-marketing{
-        padding: 70px 0;   
-    }
-    
-    .contenido-servicios-marketing h2{
-        font-size: 4rem;
-        margin-top: .4em 0;
-    }
-
-    .contenido-servicios-marketing p{
-        font-size: 1.7rem;
-        line-height: 1.5;
-    }
-
-    /*FIN MARKETING DIGITAL*/
-
-
-    /*IMAGEN CORPORATIVA*/
-
-
-    /***CONTENIDO****/ 
-
-    /*borrar clases del section dejarlo con su style "no sirven las clases"*/
-
-    section .mensajes-servicios{
-        padding: 0 20px 50px 0;
-        -webkit-background-size: cover;
-        background-size: cover;
-        margin-top: 5rem;
-    }
-
-    .mensaje-imagen-corporativa{ /*borra la clases del costado del container - mensajes-servicios*/
-        height: auto;
-        padding-bottom: 7rem;
-        padding-top: 80px;
-    }
-
-    .mensaje-imagen-corporativa p{
-        line-height: 1.4;
-        font-size: 2.4rem;
-    }
-
-    /*FIN IMAGEN CORPORATIVA*/
-
-
-    /******HEADER******/
-
-    /******FIN HEADER******/
-
-
-    /***CONTENIDO****/ 
-
-    /*borrar clases del section dejarlo con su style "no sirven las clases"*/
-
-    .contenido-imagen-corporativa{ /*borra la clases del costado del container - mensajes-servicios*/
-        height: auto;
-        padding-bottom: 7rem;
-        padding-top: 80px;
-    }
-
-    .contenido-imagen-corporativa p{
-        line-height: 1.4;
-        font-size: 2.4rem;
-    }
-
-/********FIN IMAGEN CORPORATIVA******/
-
-
- /*********EQUIPO RESPONSIVE*****/
+/*********EQUIPO RESPONSIVE*****/
      
     .equipo{
         text-align: center
@@ -901,6 +928,150 @@ margin-bottom: 60px
 }
 
  /*********FIN CONTACTO*****/
+
+
+/***********SERVICIOS**********/
+
+
+    /******HEADER******/
+        
+    h1.servicios{
+        font-size 8rem
+        text-transform capitalize
+        font-weight 900
+        text-shadow 0px 0px 10px rgba(0, 0, 0, 0.5)
+    }
+
+
+    h2.contenido-servicios {
+        font-size: 4rem;
+        font-weight: 400;
+        margin: 2rem 0;
+    }
+
+    p.contenido-servicios {
+        font-size: 1.9rem;
+        line-height 30px
+
+    }
+
+    .servicios h1{
+        font-size 8rem
+        text-transform capitalize
+        font-weight 900
+        text-shadow 0px 0px 10px rgba(0, 0, 0, 0.5)
+    }
+
+    /******FIN HEADER******/
+
+
+    /*DISEÑOWEB*/
+
+
+    /***CONTENIDO****/ /*camibar clase mensaje-servicios por .container.acerca-contenido*/
+
+    .logos-lenguajes-section {
+    padding: 5rem 20px 0 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    }
+
+    div.contenido-servicios{
+        border: 0;
+        margin: 50px auto;
+        padding: 0;
+    }
+
+    .disenoweb{
+    margin: 50px auto;
+    }
+
+
+    /*FIN DISEÑOWEB*/
+
+    
+    /*MARKETING DIGITAL*/
+
+    /***CONTENIDO****/ 
+
+    /*borrar clases del section dejarlo con su style "no sirven las clases"*/
+
+    .servicios-section {
+    padding: 43px 0;
+    background: white;
+    }
+
+    section.contenido-servicios-marketing{
+        padding: 70px 0;   
+    }
+    
+    .contenido-servicios-marketing h2{
+        font-size: 4rem;
+        margin-top: .4em 0;
+    }
+
+    .contenido-servicios-marketing p{
+        font-size: 1.7rem;
+        line-height: 1.5;
+    }
+
+    /*FIN MARKETING DIGITAL*/
+
+
+    /*IMAGEN CORPORATIVA*/
+
+
+    /***CONTENIDO****/ 
+
+    /*borrar clases del section dejarlo con su style "no sirven las clases"*/
+
+    section .mensajes-servicios{
+        padding: 0 20px 50px 0;
+        -webkit-background-size: cover;
+        background-size: cover;
+        margin-top: 5rem;
+    }
+
+    .mensaje-imagen-corporativa{ /*borra la clases del costado del container - mensajes-servicios*/
+        height: auto;
+        padding-bottom: 7rem;
+        padding-top: 80px;
+    }
+
+    .mensaje-imagen-corporativa p{
+        line-height: 1.4;
+        font-size: 2.4rem;
+    }
+
+    /*FIN IMAGEN CORPORATIVA*/
+
+
+    /******HEADER******/
+
+
+    /******FIN HEADER******/
+
+
+    /***CONTENIDO****/ 
+
+    /*borrar clases del section dejarlo con su style "no sirven las clases"*/
+
+    .contenido-imagen-corporativa{ /*borra la clases del costado del container - mensajes-servicios*/
+        height: auto;
+        padding-bottom: 7rem;
+        padding-top: 80px;
+    }
+
+    .contenido-imagen-corporativa p{
+        line-height: 1.4;
+        font-size: 2.4rem;
+    }
+
+/********FIN IMAGEN CORPORATIVA******/
+
+
      
      /**********FOOTER**********/
     .logo-footer{
@@ -956,7 +1127,6 @@ margin-bottom: 60px
         font-size: 1.59rem
         font-weight: 400
         color: #454242
-        margin-left: 27px
     }
 
     footer a {
@@ -969,6 +1139,7 @@ margin-bottom: 60px
     footer a:hover {
         color: white
     }
+    
     
     /*********FIN FOOTER*********/
     
@@ -1017,7 +1188,11 @@ margin-bottom: 60px
     // header a{
     //     display none
     // }
-
+        
+    .forkit-none{
+        display none
+    }
+    
     button{
         display none
     }
@@ -1035,6 +1210,7 @@ margin-bottom: 60px
         padding 20px 0
     }
     
+    
     li.display-none.alto-li{
         padding 6px 0
         display block
@@ -1042,6 +1218,13 @@ margin-bottom: 60px
 
 
     /************NAV************/
+    .navbar-nav li a:hover{
+        background-color #fff200 !important
+        color black !important
+        outline 0
+        text-shadow 0px 0px 5px rgba(0, 0, 0, 0)
+    }  
+
     nav a{
         color white
     }
@@ -1058,6 +1241,8 @@ margin-bottom: 60px
         background #fff200 !important
         color black !important
     }
+    
+
     
     .navbar-nav{
         background black
@@ -1200,13 +1385,7 @@ margin-bottom: 60px
 
     /********MENSAJE*********/
 
-    .forkit-curtain{
-        display: none
-    }    
 
-    .forkit{
-        display: none
-    }
 
     .mensaje-section {
         padding: 40px 0
@@ -1223,7 +1402,7 @@ margin-bottom: 60px
     }
 
     .intro-contacto {
-        max-height: 100%
+        height: 70%
     }
 
     .intro-servicios {
@@ -1242,18 +1421,10 @@ margin-bottom: 60px
         background: url('http://idearteinc.com/img/bg-internas.png')
     }
 
-    .intro-servicios .servicios-body .frase-principal {
-        margin: 0 0 4rem
-        font-weight: 400
-        letter-spacing: 1px
-        line-height: 5.5rem
-        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5)
-        font-size 3.5rem  !important
-    }
-    
     h1.frase-principal{
         line-height: 4.8rem;
         font-size: 4rem !important;
+        color white
     }
 
     .intro-blog{
@@ -1371,7 +1542,7 @@ margin-bottom: 60px
     width: 100%
     }
 
-    .u-verticalContent {
+    .u-verticalContent{
     display: table-cell
     vertical-align: middle
     }
@@ -1380,8 +1551,29 @@ margin-bottom: 60px
         display: none
     }
     
+    .margin-top{
+        margin-top 2em
+    }
     
     /***************FIN INDEX***************/
+        
+    /******ACERCA*****/
+    .acerca-proceso h2{
+        text-align: center !important
+        margin 0 0 1.5em 0
+    }
+
+    .acerca-proceso h3{
+        text-align: center
+        margin-bottom 26px
+    }
+
+    .acerca-proceso p{
+        text-align: center
+        margin-bottom 5rem
+    }
+    /******FIN ACERCA*****/
+        
         
     a.btn.btn-circle-portada.page-scroll{
         display none
@@ -1406,9 +1598,30 @@ margin-bottom: 60px
     
     /************CONTACTO***************/
         
+    /****SERVICIOS******/
+    h1.servicios{
+        font-size 4.5rem
+    }
+    
+    h2.contenido-servicios{
+        font-size 3rem
+    }
+    
+    .padding0{
+        padding 0
+    }
+    
+    .padding-right0{
+        padding-right 0
+    }
+    
+    .text-center-mobile{
+        text-align center !important
+    }
+        
     /*DISEÑO WEB*/
         
-    #servicios{
+    .logos-lenguajes-section{
         display none
     }
 
@@ -1424,11 +1637,7 @@ margin-bottom: 60px
     text-align center
     }
     
-    .disenoweb h2{
-    font-size: 4rem
-    font-weight: 400
-    margin: 4rem 0
-    }
+
     
     .col-md-7.text-center{
         margin 5rem 0
@@ -1462,12 +1671,12 @@ margin-bottom: 60px
         text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2)
     }
 
-    .yellow:hover
-    {
-        background-color: #ffde00
-        // border-bottom: 4px solid #E1AE00
-        // color: white
-    }
+    // .yellow:hover
+    // {
+    //     background-color: #ffde00
+    //     // border-bottom: 4px solid #E1AE00
+    //     // color: white
+    // }
 
 
     /*********FOOTER*********/
@@ -1531,12 +1740,33 @@ margin-bottom: 60px
     footer a:hover {
         color white
     }
-    
-
         
     .linea1, .linea2, .linea3
     {
-            line-height: 30px;
+    line-height: 30px;
+    }
+    
+    .max-width70{
+    max-width 70%
+    }
+    
+    .texto-centrado{
+        text-align center !important
+    }
+    
+
+
+    /*REUTILIZABLES*/
+    .padding-bottom{
+        padding-bottom 2em
+    }
+    
+    .padding-top0{
+        padding-top 0
+    }
+    
+    .redes-sociales{
+        padding 0 7% !important
     }
 }
 
@@ -1605,11 +1835,9 @@ form.contacto button:hover{
 }
 
 
-
-
-
-
-
+h2.portafolio {
+    margin 50px auto
+}
 
 
 
@@ -1621,7 +1849,9 @@ form.contacto button:hover{
     /****************INDEX**************/
 
     .portada-index{
-        background: url("http://idearteinc.com/img/portada-index.jpg") center center;
+        background: url("http://idearteinc.com/img/portada-index.jpg")
+        background-repeat: no-repeat;
+        background-position: center center;
         background-attachment: fixed
         background-size: cover;
     }
@@ -1645,7 +1875,9 @@ form.contacto button:hover{
     /************disenoweb***************/
         
     .portada-disenoweb{
-        background: url(http://idearteinc.com/img/disenoweb/portada-diseno-web.jpg) no-repeat top center scroll
+        background: url(http://idearteinc.com/img/disenoweb/portada-diseno-web.jpg)
+        background-repeat: no-repeat;
+        background-position: center center;
         background-attachment: fixed
         background-size: cover;
     }
@@ -1656,9 +1888,10 @@ form.contacto button:hover{
     /************marketing***************/
         
     .portada-marketing{
-        background: url(http://idearteinc.com/img/marketing-digital/portada-marketing-digital.jpg) no-repeat bottom center scroll
+        background: url(http://idearteinc.com/img/marketing-digital/portada-marketing-digital.jpg)
+        background-repeat: no-repeat;
+        background-position: center center;
         background-attachment: fixed
-        background-color: white
         background-size: cover;
     }
     
@@ -1668,9 +1901,10 @@ form.contacto button:hover{
     /************IMAGEN CORPORATIVA***************/
         
     .portada-imagen-corporativa{
-        background: url(http://idearteinc.com/img/imagen-corporativa/imagen-corporativa.jpg) no-repeat bottom center scroll
+        background: url(http://idearteinc.com/img/imagen-corporativa/imagen-corporativa.jpg)
+        background-repeat: no-repeat;
+        background-position: center center;
         background-attachment: fixed
-        background-color: white
         background-size: cover;
     }
     
@@ -1680,9 +1914,10 @@ form.contacto button:hover{
     /************EQUIPO***************/
         
     .portada-equipo{
-        background: url(http://idearteinc.com/img/equipo/portada-equipo.jpg) no-repeat center center scroll
+        background: url(http://idearteinc.com/img/equipo/portada-equipo.jpg) 
+        background-repeat: no-repeat;
+        background-position: center center;
         background-attachment: fixed
-        background-color: white
         background-size: cover;
     }
     
@@ -1692,25 +1927,29 @@ form.contacto button:hover{
     /************CONTACTO***************/
     
     .portada-contacto{
-        background: url(http://idearteinc.com/img/contacto/portada-contacto.jpg) no-repeat bottom center scroll
-        background-color: white
-        background-size: cover;
+        background: url(http://idearteinc.com/img/contacto/portada-contacto.jpg)
+        background-repeat: no-repeat
+        background-position: center center
+        background-size: cover
     }
 
     /************FIN CONTACTO***************/
+        
+    .portada-blog{
+        background: url(http://idearteinc.com/blog/img/tendencias/portada-tendencias.jpg) 
+        background-repeat: no-repeat
+        background-position: center center
+        background-size: cover
+        width 100%  
+        height 75%
+    }
 
 @media only screen and (max-width: 767px) {
     
     /****************INDEX**************/
 
     .portada-index{
-        background url(http://idearteinc.com/img/portada-index-medium.png) center center
-        background-attachment fixed
-    }
-
-    .portada-index{
-        background url("http://idearteinc.com/img/portada-index-smal.png") center center
-        background-attachment: fixed
+        background url("http://idearteinc.com/img/portada-index-movil.jpg")
     }
     
     /********FIN INDEX*********/
@@ -1719,7 +1958,8 @@ form.contacto button:hover{
     /************ACERCA***************/   
 
     .portada-acerca{
-        background url(http://idearteinc.com/img/acerca/portada-acerca-movil.png)
+        background url(http://idearteinc.com/img/acerca/portada-acerca-movil.jpg)
+        background-position center center
     }
     
     /************ACERCA***************/
@@ -1728,8 +1968,8 @@ form.contacto button:hover{
     /************disenoweb***************/
         
     .portada-disenoweb{
-        background: url(http://idearteinc.com/img/disenoweb/portada-diseno-web.jpg) no-repeat top center scroll
-        background-attachment: fixed
+        background: url(http://idearteinc.com/img/disenoweb/portada-diseno-web-movil.jpg)
+        background-position: right center;
     }
     
     /************FIN disenoweb***************/
@@ -1738,9 +1978,8 @@ form.contacto button:hover{
     /************marketing***************/
         
     .portada-marketing{
-        background: url(http://idearteinc.com/img/marketing-digital/portada-marketing-digital.jpg) no-repeat bottom center scroll
-        background-attachment: fixed
-        background-color: white
+        background: url(http://idearteinc.com/img/marketing-digital/portada-marketing-digital-movil.jpg)
+        background-position: right center;
     }
     
     /************FIN marketing***************/
@@ -1749,9 +1988,8 @@ form.contacto button:hover{
     /************IMAGEN CORPORATIVA***************/
         
     .portada-imagen-corporativa{
-        background: url(http://idearteinc.com/img/imagen-corporativa/imagen-corporativa.jpg) no-repeat bottom center scroll
-        background-attachment: fixed
-        background-color: white
+        background: url(http://idearteinc.com/img/imagen-corporativa/imagen-corporativa-movil.jpg)
+        background-position: right center;
     }
     
     /************FIN IMAGEN CORPORATIVA***************/
@@ -1760,9 +1998,7 @@ form.contacto button:hover{
     /************EQUIPO***************/
         
     .portada-equipo{
-        background: url(http://idearteinc.com/img/equipo/portada-equipo.jpg) no-repeat center center scroll
-        background-attachment: fixed
-        background-color: white
+        background: url(http://idearteinc.com/img/equipo/portada-equipo-movil.jpg)
     }
     
     /************FIN EQUIPO***************/
@@ -1770,10 +2006,11 @@ form.contacto button:hover{
 
     /************CONTACTO***************/
     
-    .portada-contacto{
-        background: url(http://idearteinc.com/img/contacto/portada-contacto.jpg) no-repeat bottom center scroll
-        background-color: white
-    }
+    // .portada-contacto{
+    //     background: url(http://idearteinc.com/img/contacto/portada-contacto.jpg)
+    //     background-repeat no-repeat
+    //     background-position center center
+    // }
 
     /************FIN CONTACTO***************/
 
